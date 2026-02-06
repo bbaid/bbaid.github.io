@@ -1,5 +1,11 @@
-# Bojan Baidanov
-## Junior Data Analyst | Geospatial Specialist
+---
+title: Bojan Baidanov
+description: Junior Data Analyst | Geospatial Systems & Tech
+show_downloads: true
+---
+
+## Welcome to my Portfolio
+I am a Geospatial Systems student at Sofia University with a passion for data analysis...
 
 [LinkedIn](https://www.linkedin.com/in/bbaidanoff/) | [Email](mailto:bbaidanoff2@gmail.com)
 
