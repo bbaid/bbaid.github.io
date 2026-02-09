@@ -31,7 +31,7 @@ Developed a composite **Fitness Accessibility Index** by integrating population 
 - Applied spatial joins, zonal statistics, and vector analysis
 
 **Tools:** ArcGIS Pro · Python (GeoPandas, Pandas, NumPy) · Spatial SQL
-
+![Fitness Index Map](images/fitness_index.png)
 ---
 
 ### 🌍 European Economic Disparity Analysis (GDP per Capita)
