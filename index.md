@@ -30,7 +30,6 @@ Developed a composite **Fitness Accessibility Index** by integrating population 
 - Combined raster and vector-derived metrics into a final accessibility index
 - Applied spatial joins, zonal statistics, and vector analysis
 
-**Tools:** ArcGIS Pro · Python (GeoPandas, Pandas, NumPy) · Spatial SQL
 ![Fitness Index Map](images/fitness_index.png)
 ---
 
