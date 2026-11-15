@@ -1,0 +1,126 @@
+/* ─────────────────────────────────────────────────────────
+   CV — one A4 sheet in the portfolio's style.
+   On screen it sits on a desk; printing (or "Save as PDF")
+   gives exactly the sheet, with no browser margins.
+   ───────────────────────────────────────────────────────── */
+
+:root {
+  --paper: #f4f2ea;
+  --ink: #1c2219;
+  --muted: #4d5647;
+  --line: #cfcbbb;
+  --accent: #2f6b45;
+  --rust: #9a4523;
+  --serif: "Literata", Georgia, "Times New Roman", serif;
+  --sans: "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+@page { size: A4; margin: 0; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #dedacb; color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+a { color: inherit; text-decoration: none; }
+p, ul, ol, dl, dd, h1, h2, h3 { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+
+/* ── Screen toolbar ── */
+.bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; max-width: 210mm; margin: 0 auto; padding: 18px 4px 14px; font-size: 15px; }
+.bar a { display: inline-flex; align-items: center; min-height: 42px; padding: 8px 16px; border: 1px solid var(--ink); border-radius: 999px; font-weight: 600; color: var(--ink); transition: background 0.15s, color 0.15s; }
+.bar a:hover { background: var(--ink); color: var(--paper); }
+.bar a.primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.bar a.primary:hover { background: var(--ink); border-color: var(--ink); }
+.bar a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.bar div { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ── The sheet ── */
+.sheet {
+  position: relative; overflow: hidden;
+  width: 210mm; height: 297mm; margin: 0 auto 28px;
+  padding: 12mm 15mm 10mm;
+  background: var(--paper);
+  box-shadow: 0 1px 2px rgb(28 34 25 / 10%), 0 18px 40px -16px rgb(28 34 25 / 35%);
+  font-size: 8.5pt; line-height: 1.4;
+  display: flex; flex-direction: column;
+}
+/* Bulgarian runs longer than English, so it is set a touch smaller. */
+@media print, screen and (min-width: 841px) { .sheet-bg { font-size: 8.3pt; } }
+.contours { position: absolute; top: 0; left: 0; width: 100%; height: 62mm; color: var(--line); opacity: 0.75; pointer-events: none; }
+
+/* ── Header ── */
+.head { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 10mm; }
+.eyebrow { display: flex; align-items: center; gap: 2mm; font-family: var(--mono); font-size: 7.4pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.eyebrow::before { content: ""; width: 1.9mm; height: 1.9mm; border-radius: 50%; background: var(--rust); }
+h1 { font-family: var(--serif); font-weight: 700; font-size: 31pt; line-height: 1.02; letter-spacing: -0.02em; margin-top: 2.2mm; }
+.role { font-family: var(--serif); font-size: 12.5pt; line-height: 1.25; margin-top: 1.8mm; }
+.contact { display: flex; flex-wrap: wrap; gap: 1mm 4mm; margin-top: 3.6mm; font-family: var(--mono); font-size: 7.3pt; letter-spacing: 0.01em; }
+.contact a { border-bottom: 0.5pt solid var(--accent); padding-bottom: 0.2mm; }
+.photo { flex: none; width: 29mm; height: 29mm; padding: 1.2mm; border-radius: 50%; background: #fbfaf5; border: 0.5pt solid var(--line); box-shadow: 0 0 0 1.3mm var(--paper), 0 0 0 calc(1.3mm + 0.8pt) var(--rust); margin-right: 2mm; }
+.photo img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+
+/* ── Body: two columns ── */
+.cols { position: relative; flex: 1; display: grid; grid-template-columns: minmax(0, 1.82fr) minmax(0, 1fr); gap: 7mm; margin-top: 5mm; padding-top: 4.4mm; border-top: 0.8pt solid var(--ink); }
+.side { padding-left: 6mm; border-left: 0.5pt solid var(--line); }
+section + section { margin-top: 4mm; }
+h2 { display: flex; align-items: baseline; gap: 2.2mm; font-family: var(--mono); font-weight: 500; font-size: 7.6pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 2mm; }
+h2 span { color: var(--rust); }
+.lead { font-family: var(--serif); font-size: 9.8pt; line-height: 1.4; }
+
+/* Projects */
+.projects li + li { margin-top: 2.1mm; }
+h3 { font-family: var(--serif); font-weight: 700; font-size: 10pt; line-height: 1.25; }
+h3 small { font-family: var(--mono); font-weight: 400; font-size: 7pt; letter-spacing: 0.04em; color: var(--rust); margin-left: 1.4mm; white-space: nowrap; }
+.projects p, .entries p { color: var(--muted); margin-top: 0.5mm; }
+.tools { font-family: var(--mono); font-size: 6.9pt; letter-spacing: 0.01em; color: var(--accent); white-space: nowrap; }
+.more { margin-top: 2.2mm; font-family: var(--mono); font-size: 7.2pt; color: var(--muted); }
+.more a { color: var(--accent); border-bottom: 0.5pt solid var(--accent); }
+
+/* Dated entries */
+.entries li { display: grid; grid-template-columns: 21mm minmax(0, 1fr); gap: 3mm; padding: 1.5mm 0; border-top: 0.5pt solid var(--line); }
+.entries li:last-child { padding-bottom: 0; }
+.entries time { font-family: var(--mono); font-size: 7pt; line-height: 1.75; color: var(--rust); }
+.entries b { font-weight: 600; }
+.side .entries li { grid-template-columns: minmax(0, 1fr); gap: 0; }
+.side .entries li:first-child { border-top: 0; padding-top: 0; }
+
+/* Toolbox and short lists */
+.toolbox div + div { margin-top: 1.9mm; }
+.toolbox dt { font-family: var(--mono); font-size: 6.9pt; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+.plain li + li { margin-top: 1.2mm; }
+.plain b { font-weight: 600; }
+.plain span { color: var(--muted); }
+
+.foot { position: relative; display: flex; justify-content: space-between; gap: 6mm; margin-top: 3mm; padding-top: 2.2mm; border-top: 0.5pt solid var(--line); font-family: var(--mono); font-size: 6.8pt; letter-spacing: 0.03em; color: var(--muted); }
+
+/* ── Small screens: let the sheet reflow instead of shrinking ── */
+@media screen and (max-width: 840px) {
+  .bar { padding: 14px 16px 12px; }
+  .sheet { width: auto; height: auto; margin: 0 0 24px; padding: 28px 20px 24px; font-size: 15.5px; line-height: 1.5; box-shadow: none; }
+  .contours { height: 240px; }
+  .head { align-items: flex-start; gap: 16px; }
+  .eyebrow { font-size: 11.5px; }
+  h1 { font-size: 40px; margin-top: 10px; }
+  .role { font-size: 19px; margin-top: 8px; }
+  .contact { font-size: 13px; gap: 8px 18px; margin-top: 16px; }
+  .contact a { display: inline-block; padding: 4px 0; }
+  .photo { width: 84px; height: 84px; padding: 3px; margin-right: 6px; box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--rust); }
+  .cols { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-top: 24px; padding-top: 22px; }
+  .side { padding-left: 0; border-left: 0; }
+  section + section { margin-top: 26px; }
+  h2 { font-size: 12.5px; margin-bottom: 12px; }
+  .lead, h3 { font-size: 18px; }
+  h3 small, .tools, .more, .entries time, .toolbox dt { font-size: 12px; }
+  .tools { white-space: normal; }
+  .projects li + li { margin-top: 16px; }
+  .entries li { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 10px 0; }
+  .toolbox div + div { margin-top: 10px; }
+  .plain li + li { margin-top: 6px; }
+  .foot { font-size: 11.5px; margin-top: 26px; padding-top: 12px; flex-wrap: wrap; }
+}
+
+@media print {
+  body { background: none; }
+  .bar { display: none; }
+  .sheet { margin: 0; box-shadow: none; }
+}
