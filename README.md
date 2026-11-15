@@ -9,7 +9,9 @@ index.html           the whole page: hero, work, GIS Club SU, code, about, conta
 assets/css/style.css styles, light and dark themes
 assets/js/main.js    theme toggle, project filter, map viewer, scroll reveal
 assets/img/          maps as WebP: <name>.webp (full size) and <name>-sm.webp (card)
-CV_Bojan_GIS.pdf     CV linked from the page
+cv/                  the CV as a web page: index.html (English), bg.html (Bulgarian), cv.css
+CV_Bojan_GIS.pdf     the English CV as PDF, made from cv/index.html
+CV_Bojan_GIS_BG.pdf  the Bulgarian CV as PDF, made from cv/bg.html
 ```
 
 ## Adding a project
@@ -33,6 +35,15 @@ inside `<ol class="book-pages">` in `index.html` is one page, in reading order.
 Keep the cover first and the back cover last. On wide screens the pages pair up
 as spreads after the cover, so companion sheets (for example 10 and 10a) face
 each other when the first of the pair sits on an even position after the cover.
+
+## Updating the CV
+
+Edit the text in `cv/index.html` (English) and `cv/bg.html` (Bulgarian). Each is
+one A4 sheet, so check that it still fits on one page after a change.
+
+To make the PDF, open the page in Chrome, choose Print, then "Save as PDF" with
+paper size A4, margins "None" and "Background graphics" switched on. Save it over
+`CV_Bojan_GIS.pdf` or `CV_Bojan_GIS_BG.pdf`.
 
 To preview locally, run `python3 -m http.server` in this folder and open
 <http://localhost:8000>.
