@@ -1,4 +1,4 @@
-/* Portfolio interactions: theme toggle, project filter, map viewer, atlas book, scroll reveal. */
+/* Portfolio interactions: theme and language toggles, project filter, map viewer, atlas book, scroll reveal. */
 (function () {
   'use strict';
   var root = document.documentElement;
@@ -19,6 +19,15 @@
       try { localStorage.setItem('theme', next); } catch (e) { /* storage unavailable */ }
     });
   }
+
+  /* ── Language toggle: land on the same section in the other language ── */
+  toArray(document.querySelectorAll('[data-lang-toggle] a')).forEach(function (link) {
+    link.addEventListener('click', function () {
+      var current = document.querySelector('.nav a.is-current');
+      if (!current || window.scrollY < 200) return;
+      link.href = link.getAttribute('href').split('#')[0] + current.getAttribute('href');
+    });
+  });
 
   /* ── Project filter ── */
   var chips = toArray(document.querySelectorAll('.chip'));
