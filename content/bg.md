@@ -54,6 +54,7 @@ Third-year student of Geospatial Systems and Technologies at Sofia University �
 - `eyebrow`: 42°41′ N · 23°19′ E — Sofia, Bulgaria
 - `button-work`: See the work
 - `button-club`: GIS Club SU
+- `button-tutoring`: GIS tutoring
 - `button-cv`: CV
 - `figure-label`: FIG. 01
 - `figure-caption`: Green and blue infrastructure of Sofia’s functional urban area

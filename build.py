@@ -426,6 +426,7 @@ def hero(page: Page, d: Doc) -> str:
       <div class="cta-row">
         <a class="btn btn-primary" href="#work">{esc(h.get('button-work'))}</a>
         <a class="btn" href="#club">{esc(h.get('button-club'))}</a>
+        <a class="btn" href="#tutoring">{esc(h.get('button-tutoring'))}</a>
         <a class="btn btn-ghost" href="cv/">{esc(h.get('button-cv'))}</a>
       </div>
     </div>
