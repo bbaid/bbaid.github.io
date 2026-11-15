@@ -104,28 +104,106 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
       <p class="section-lead">Recent projects from my studies and my own time. Select any map to see it full size.</p>
     </header>
 
-    <!-- Featured: V4+2 atlas -->
-    <article class="feature reveal">
-      <div class="feature-media">
-        <button class="shot" type="button" data-lightbox data-group="v4" data-full="assets/img/v4-atlas-overview.webp" data-caption="All sheets of the V4+2 Map Atlas side by side: transport, technical infrastructure, population, economy, environment and barriers.">
-          <img src="assets/img/v4-atlas-overview-sm.webp" width="1000" height="565" loading="lazy" alt="Contact sheet of all 36 atlas pages in one consistent style">
-        </button>
-        <button class="shot shot-inset" type="button" data-lightbox data-group="v4" data-full="assets/img/v4-atlas-sheet.webp" data-caption="Sheet from the barriers chapter: nature protection against planned transport networks in the V4+2 countries.">
-          <img src="assets/img/v4-atlas-sheet-sm.webp" width="990" height="1400" loading="lazy" alt="Atlas sheet showing protected areas and planned transport corridors across six countries">
-        </button>
+    <!-- Featured: V4+2 atlas, as a book with turning pages -->
+    <article class="feature reveal" id="atlas">
+      <div class="feature-head">
+        <div class="feature-body">
+          <p class="kicker">Atlas · October 2026</p>
+          <h3>V4+2 Map Atlas</h3>
+          <p>A 36-sheet A3 atlas rebuilt for the <em>Common Spatial Development Strategy of the V4+2 Countries</em> — Czechia, Hungary, Poland, Slovakia, Bulgaria and Romania. It keeps the themes of the 2014 original, but every map is redrawn from the latest open data with one legend system, one typeface and one palette, so sheets can be compared at a glance.</p>
+          <p>The barriers chapter adds a conflict analysis of planned transport infrastructure against Natura 2000 sites and high mountains.</p>
+        </div>
+        <div class="feature-aside">
+          <dl class="mini-facts">
+            <div><dt>36</dt><dd>sheets + cover</dd></div>
+            <div><dt>6</dt><dd>countries</dd></div>
+            <div><dt>~10 GB</dt><dd>source data</dd></div>
+          </dl>
+          <p class="method"><b>How:</b> one Python script per sheet on a shared style library (layout, legend, basemap, labels, projections); output as vector PDF and 300 dpi PNG.</p>
+          <ul class="tags"><li>Python</li><li>GeoPandas</li><li>Rasterio</li><li>Matplotlib</li><li>OpenStreetMap</li><li>QGIS</li></ul>
+        </div>
       </div>
-      <div class="feature-body">
-        <p class="kicker">Atlas · October 2026</p>
-        <h3>V4+2 Map Atlas</h3>
-        <p>A 36-sheet A3 atlas rebuilt for the <em>Common Spatial Development Strategy of the V4+2 Countries</em> — Czechia, Hungary, Poland, Slovakia, Bulgaria and Romania. It keeps the themes of the 2014 original, but every map is redrawn from the latest open data with one legend system, one typeface and one palette, so sheets can be compared at a glance.</p>
-        <p>The barriers chapter adds a conflict analysis of planned transport infrastructure against Natura 2000 sites and high mountains.</p>
-        <dl class="mini-facts">
-          <div><dt>36</dt><dd>sheets + cover</dd></div>
-          <div><dt>6</dt><dd>countries</dd></div>
-          <div><dt>~10 GB</dt><dd>source data</dd></div>
-        </dl>
-        <p class="method"><b>How:</b> one Python script per sheet on a shared style library (layout, legend, basemap, labels, projections); output as vector PDF and 300 dpi PNG.</p>
-        <ul class="tags"><li>Python</li><li>GeoPandas</li><li>Rasterio</li><li>Matplotlib</li><li>OpenStreetMap</li><li>QGIS</li></ul>
+
+      <div class="book-wrap">
+        <div class="book" id="atlasBook" tabindex="0" role="group" aria-roledescription="book" aria-label="V4+2 Map Atlas, six selected sheets. Use the left and right arrow keys to turn pages.">
+          <ol class="book-pages">
+            <li class="page page-cover" data-title="Cover">
+              <svg class="cover-art" viewBox="0 0 300 424" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <g fill="none" stroke="#fff" stroke-width="0.6">
+                  <circle cx="210" cy="470" r="90"/><circle cx="210" cy="470" r="140"/><circle cx="210" cy="470" r="190"/><circle cx="210" cy="470" r="240"/><circle cx="210" cy="470" r="290"/><circle cx="210" cy="470" r="340"/>
+                  <path d="M210 470L-40 190M210 470L40 130M210 470L130 100M210 470L220 90M210 470L310 110M210 470L390 170"/>
+                </g>
+              </svg>
+              <p class="cover-kicker">Czechia · Hungary · Poland · Slovakia · Bulgaria · Romania</p>
+              <p class="cover-title"><b>V4+2</b> Map Atlas</p>
+              <p class="cover-sub">Common Spatial Development Strategy of the V4+2 Countries <span>maps recreated with 2024–2026 data</span></p>
+              <p class="cover-foot"><span>A3 atlas · October 2026</span><span>Bojan Baidanoff</span></p>
+            </li>
+            <li class="page page-text" data-title="Contents">
+              <p class="pt-kicker">V4+2 Map Atlas</p>
+              <p class="pt-title">Contents</p>
+              <dl class="pt-toc">
+                <div><dt>Development poles and axes</dt><dd>1</dd></div>
+                <div><dt>Transport networks</dt><dd>2–5</dd></div>
+                <div><dt>Technical infrastructure</dt><dd>6–8</dd></div>
+                <div><dt>Socio-economic conditions</dt><dd>9–12a</dd></div>
+                <div><dt>Environmental conditions</dt><dd>13–18</dd></div>
+                <div><dt>Barriers of spatial development</dt><dd>19–28</dd></div>
+                <div><dt>European context</dt><dd>A3-1–4</dd></div>
+              </dl>
+              <p class="pt-note">This web edition shows six of the 36 sheets: figures 1, 3, 8, 10, 10a and 21.</p>
+            </li>
+            <li class="page page-map" data-title="Fig. 1 · Development poles and axes" data-full="assets/img/atlas/fig01.webp" data-caption="Fig. 1 — Development poles and axes of the V4+2 countries, with the cross-border situations of 2014 re-assessed for 2026.">
+              <img src="assets/img/atlas/fig01.webp" width="1414" height="2000" loading="lazy" alt="Atlas sheet: main and secondary development poles joined by axes across the six countries, with five numbered border situations">
+            </li>
+            <li class="page page-map" data-title="Fig. 3 · Road network" data-full="assets/img/atlas/fig03.webp" data-caption="Fig. 3 — Road network of the V4+2 countries: motorways, expressways and other TEN-T roads by status, and cross-border gaps, 2026.">
+              <img src="assets/img/atlas/fig03.webp" width="1414" height="2000" loading="lazy" alt="Atlas sheet: motorways and expressways in dark red by status, with six cross-border gaps marked">
+            </li>
+            <li class="page page-map" data-title="Fig. 8 · Crude oil pipelines" data-full="assets/img/atlas/fig08.webp" data-caption="Fig. 8 — Crude oil pipelines of the V4+2 countries and their neighbours: operating, idle, proposed and under construction, 2026.">
+              <img src="assets/img/atlas/fig08.webp" width="1414" height="2000" loading="lazy" alt="Atlas sheet: crude oil pipelines such as Druzhba and Adria drawn in black over a relief base map">
+            </li>
+            <li class="page page-map" data-title="Fig. 10 · Net migration, Europe" data-full="assets/img/atlas/fig10.webp" data-caption="Fig. 10 — Net migration in Europe by NUTS 3 regions, per 1 000 inhabitants, 2024.">
+              <img src="assets/img/atlas/fig10.webp" width="1414" height="2000" loading="lazy" alt="Atlas sheet: choropleth of net migration across Europe, blue for emigration and orange for immigration">
+            </li>
+            <li class="page page-map" data-title="Fig. 10a · Net migration, V4+2" data-full="assets/img/atlas/fig10a.webp" data-caption="Fig. 10a — Net migration in the V4+2 countries by NUTS 3 region, per 1 000 inhabitants, 2024.">
+              <img src="assets/img/atlas/fig10a.webp" width="1414" height="2000" loading="lazy" alt="Atlas sheet: the same net migration data zoomed to the six countries, with the value printed in each region">
+            </li>
+            <li class="page page-map" data-title="Fig. 21 · Nature protection vs planned transport" data-full="assets/img/atlas/fig21.webp" data-caption="Fig. 21 — Nature protection versus planned transport networks in the V4+2 countries.">
+              <img src="assets/img/atlas/fig21.webp" width="1521" height="2151" loading="lazy" alt="Atlas sheet: protected areas in green crossed by planned road and rail corridors">
+            </li>
+            <li class="page page-text" data-title="About the atlas">
+              <p class="pt-kicker">In the full atlas</p>
+              <p class="pt-title">30 more sheets</p>
+              <p class="pt-body">Railways, waterways and airports; electricity and gas; natural change, GDP and unemployment; biogeographic regions, protected areas, Natura 2000 and land cover; nine barrier sheets and four maps of the European context.</p>
+              <p class="pt-kicker pt-gap">Sources</p>
+              <p class="pt-small">OpenStreetMap contributors (ODbL) · Eurostat and GISCO (© EuroGeographics) · EEA · Copernicus · European Commission TENtec · Global Energy Monitor (CC BY 4.0) · GIE · ENTSO-E · UNEP-WCMC and IUCN Protected Planet · OurAirports · Natural Earth. Full source notes are in the footnote of each sheet.</p>
+              <p class="pt-small">Original strategy: ÚÚR, Brno, 2014.</p>
+            </li>
+            <li class="page page-cover page-back" data-title="Back cover">
+              <svg class="cover-art" viewBox="0 0 300 424" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <g fill="none" stroke="#fff" stroke-width="0.6">
+                  <circle cx="90" cy="470" r="90"/><circle cx="90" cy="470" r="140"/><circle cx="90" cy="470" r="190"/><circle cx="90" cy="470" r="240"/><circle cx="90" cy="470" r="290"/><circle cx="90" cy="470" r="340"/>
+                </g>
+              </svg>
+              <p class="cover-foot"><span>V4+2 Map Atlas</span><span>October 2026</span></p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="book-bar">
+          <button type="button" class="book-btn" data-book-prev aria-label="Previous page" aria-controls="atlasBook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
+          </button>
+          <p class="book-label" data-book-label aria-live="polite">Cover</p>
+          <button type="button" class="book-btn" data-book-next aria-label="Next page" aria-controls="atlasBook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+          </button>
+        </div>
+        <p class="book-actions">
+          <button type="button" class="more" data-book-zoom>View the sheets full size</button>
+          <button type="button" class="more" data-lightbox data-group="v4-overview" data-full="assets/img/v4-atlas-overview.webp" data-caption="All sheets of the V4+2 Map Atlas side by side: transport, technical infrastructure, population, economy, environment and barriers.">All 36 sheets at a glance →</button>
+        </p>
+        <p class="book-hint">Click a page, swipe, or use the arrow keys to turn pages.</p>
       </div>
     </article>
 
