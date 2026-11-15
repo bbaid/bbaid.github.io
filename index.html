@@ -40,6 +40,7 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
     <nav class="nav" aria-label="Sections">
       <a href="#work">Work</a>
       <a href="#club">GIS Club SU</a>
+      <a href="#tutoring">Tutoring</a>
       <a href="#code">Code</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -451,11 +452,75 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
   </div>
 </section>
 
+<!-- ───────────── Tutoring ───────────── -->
+<section class="section tutoring" id="tutoring">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow"><span class="mono">03</span> Teaching</p>
+      <h2>Private GIS tutoring</h2>
+      <p class="section-lead">One-to-one lessons in QGIS for students, researchers and professionals who need maps for their own work. We start from your question and your data, not from a fixed syllabus.</p>
+    </header>
+
+    <div class="tutor-grid">
+      <div class="reveal">
+        <h3 class="sub-head">How it works</h3>
+        <ol class="steps">
+          <li><p><b>We start with your question.</b> Before the first lesson I ask what you study or work on, what data you have, and which map you want to have a month from now.</p></li>
+          <li><p><b>You finish a map in the first lesson.</b> We build it step by step in QGIS, on a place that matters to you.</p></li>
+          <li><p><b>Then we move to your own data.</b> Each lesson ends with something you can use: a layer, a figure for a paper, or a worksheet to repeat the steps on your own.</p></li>
+        </ol>
+      </div>
+
+      <aside class="tutor-card reveal">
+        <h3 class="sub-head">Practical details</h3>
+        <p>Lessons are one-to-one and online, in Bulgarian or English. QGIS is free, so a laptop is all you need. Write to me with what you want to map and we will plan from there.</p>
+        <a class="btn btn-primary" href="mailto:bbaidanoff2@gmail.com?subject=GIS%20lessons">Ask about lessons</a>
+      </aside>
+    </div>
+
+    <div class="topics-block reveal">
+      <h3 class="sub-head">What we can cover</h3>
+      <div class="topics">
+        <article class="topic">
+          <h4>A first map in QGIS</h4>
+          <p>Layers, coordinate systems and filters, through to a finished layout with a legend and a scale bar.</p>
+          <p class="topic-tools mono">Layers · Identify · Print layout</p>
+        </article>
+        <article class="topic">
+          <h4>Points and hotspots</h4>
+          <p>Where records cluster — and why a heatmap often shows where people go, not where something is most common.</p>
+          <p class="topic-tools mono">Heatmap (kernel density)</p>
+        </article>
+        <article class="topic">
+          <h4>Grids and counts</h4>
+          <p>Records summarised by grid squares, such as the UTM 10 × 10 km grid used in distribution atlases.</p>
+          <p class="topic-tools mono">Create Grid · Count Points in Polygon</p>
+        </article>
+        <article class="topic">
+          <h4>Your own layers</h4>
+          <p>Polygons drawn from satellite imagery and fieldwork, with their types and areas in the attribute table.</p>
+          <p class="topic-tools mono">Digitising · Field Calculator</p>
+        </article>
+        <article class="topic">
+          <h4>Rasters and satellite data</h4>
+          <p>Elevation models and Sentinel-2 images: vegetation indices, change over time, and what the pixels can support.</p>
+          <p class="topic-tools mono">Raster Calculator · NDVI</p>
+        </article>
+        <article class="topic">
+          <h4>AI in your workflow, used openly</h4>
+          <p>Where AI saves time, how to check what it returns, and how to state its role next to your data sources.</p>
+          <p class="topic-tools mono">Checking results · Disclosure</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ───────────── Code ───────────── -->
 <section class="section" id="code">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">03</span> Code and web maps</p>
+      <p class="eyebrow"><span class="mono">04</span> Code and web maps</p>
       <h2>Open-source projects</h2>
       <p class="section-lead">Reproducible analyses and interactive maps on <a href="https://github.com/bbaid">GitHub</a>.</p>
     </header>
@@ -516,7 +581,7 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <section class="section section-alt" id="about">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">04</span> About</p>
+      <p class="eyebrow"><span class="mono">05</span> About</p>
       <h2>Background and toolbox</h2>
     </header>
 
@@ -579,7 +644,7 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <!-- ───────────── Contact ───────────── -->
 <section class="contact" id="contact">
   <div class="wrap contact-wrap">
-    <p class="eyebrow"><span class="mono">05</span> Contact</p>
+    <p class="eyebrow"><span class="mono">06</span> Contact</p>
     <h2>Have a question a map could answer?</h2>
     <p class="section-lead">I’m open to internships, research collaborations and guest talks for GIS Club SU.</p>
     <div class="cta-row">

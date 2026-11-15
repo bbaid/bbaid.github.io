@@ -22,6 +22,7 @@ import struct
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
@@ -614,6 +615,45 @@ def club(page: Page, d: Doc, number: int) -> str:
 </section>"""
 
 
+def tutoring(page: Page, d: Doc, number: int) -> str:
+    t, site = d.nodes["tutoring"], d.nodes["site"]
+    steps, topics = t.child("tutoring-steps"), t.child("tutoring-topics")
+    step_rows = "\n".join(f"          <li><p>{md(i)}</p></li>" for i in steps.items)
+    topic_rows = "\n".join(f"""        <article class="topic">
+          <h4>{esc(n.title)}</h4>
+          <p>{md(n.para(0))}</p>
+          <p class="topic-tools mono">{esc(n.get('tools'))}</p>
+        </article>""" for n in topics.children)
+    mail = f"mailto:{site.get('email')}?subject={quote(plain(t.get('subject')))}"
+    return f"""<section class="section tutoring" id="tutoring">
+  <div class="wrap">
+{section_head(t, number)}
+
+    <div class="tutor-grid">
+      <div class="reveal">
+        <h3 class="sub-head">{esc(steps.title)}</h3>
+        <ol class="steps">
+{step_rows}
+        </ol>
+      </div>
+
+      <aside class="tutor-card reveal">
+        <h3 class="sub-head">{esc(t.get('note-title'))}</h3>
+        <p>{md(t.get('note'))}</p>
+        <a class="btn btn-primary" href="{attr(mail)}">{esc(t.get('button'))}</a>
+      </aside>
+    </div>
+
+    <div class="topics-block reveal">
+      <h3 class="sub-head">{esc(topics.title)}</h3>
+      <div class="topics">
+{topic_rows}
+      </div>
+    </div>
+  </div>
+</section>"""
+
+
 def code(page: Page, d: Doc, number: int) -> str:
     c = d.nodes["code"]
 
@@ -711,7 +751,7 @@ def contact(page: Page, d: Doc, number: int) -> str:
 def site_page(page: Page) -> str:
     d = page.lang.doc
     ui, site = d.nodes["ui"], d.nodes["site"]
-    sections = [d.nodes[i] for i in ("work", "club", "code", "about", "contact")]
+    sections = [d.nodes[i] for i in ("work", "club", "tutoring", "code", "about", "contact")]
     return f"""{site_head(page, d)}
 <body>
 {site_header(page, d, sections)}
@@ -727,14 +767,17 @@ def site_page(page: Page) -> str:
 <!-- ───────────── GIS Club SU ───────────── -->
 {club(page, d, 2)}
 
+<!-- ───────────── Tutoring ───────────── -->
+{tutoring(page, d, 3)}
+
 <!-- ───────────── Code ───────────── -->
-{code(page, d, 3)}
+{code(page, d, 4)}
 
 <!-- ───────────── About ───────────── -->
-{about(page, d, 4)}
+{about(page, d, 5)}
 
 <!-- ───────────── Contact ───────────── -->
-{contact(page, d, 5)}
+{contact(page, d, 6)}
 
 </main>
 

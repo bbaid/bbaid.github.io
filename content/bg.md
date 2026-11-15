@@ -288,6 +288,61 @@ Public lectures, seminars and workshops · guest speakers from academia and indu
 - `note`: Announcement for the first seminar, in the club’s visual identity
 - `emblem-alt`: Club emblem: the Rectorate of Sofia University rendered as a coloured point cloud
 
+# Private GIS tutoring {#tutoring}
+
+One-to-one lessons in QGIS for students, researchers and professionals who need maps for their own work. We start from your question and your data, not from a fixed syllabus.
+
+- `nav`: Tutoring
+- `eyebrow`: Teaching
+- `button`: Ask about lessons
+- `subject`: GIS lessons
+- `note-title`: Practical details
+- `note`: Lessons are one-to-one and online, in Bulgarian or English. QGIS is free, so a laptop is all you need. Write to me with what you want to map and we will plan from there.
+
+## How it works {#tutoring-steps}
+
+- **We start with your question.** Before the first lesson I ask what you study or work on, what data you have, and which map you want to have a month from now.
+- **You finish a map in the first lesson.** We build it step by step in QGIS, on a place that matters to you.
+- **Then we move to your own data.** Each lesson ends with something you can use: a layer, a figure for a paper, or a worksheet to repeat the steps on your own.
+
+## What we can cover {#tutoring-topics}
+
+### A first map in QGIS {#topic-first}
+
+Layers, coordinate systems and filters, through to a finished layout with a legend and a scale bar.
+
+- `tools`: Layers · Identify · Print layout
+
+### Points and hotspots {#topic-hotspots}
+
+Where records cluster — and why a heatmap often shows where people go, not where something is most common.
+
+- `tools`: Heatmap (kernel density)
+
+### Grids and counts {#topic-grids}
+
+Records summarised by grid squares, such as the UTM 10 × 10 km grid used in distribution atlases.
+
+- `tools`: Create Grid · Count Points in Polygon
+
+### Your own layers {#topic-digitising}
+
+Polygons drawn from satellite imagery and fieldwork, with their types and areas in the attribute table.
+
+- `tools`: Digitising · Field Calculator
+
+### Rasters and satellite data {#topic-rasters}
+
+Elevation models and Sentinel-2 images: vegetation indices, change over time, and what the pixels can support.
+
+- `tools`: Raster Calculator · NDVI
+
+### AI in your workflow, used openly {#topic-ai}
+
+Where AI saves time, how to check what it returns, and how to state its role next to your data sources.
+
+- `tools`: Checking results · Disclosure
+
 # Open-source projects {#code}
 
 Reproducible analyses and interactive maps on [GitHub](https://github.com/bbaid).
