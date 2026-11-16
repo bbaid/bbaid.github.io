@@ -20,36 +20,36 @@ Images, links and categories are set in content/en.md and are not repeated here.
 After editing, run:  python3 build.py   (it reports how much is still in English)
 -->
 
-# Site {#site}
+# Сайт {#site}
 
-- `title`: Bojan Baidanoff — GIS, cartography and spatial analysis
-- `description`: Portfolio of Bojan Baidanoff, Geospatial Systems and Technologies student at Sofia University and founder of GIS Club SU: map atlases, climate and terrain posters, biodiversity web atlases and open-source spatial analysis.
-- `share-description`: Map atlases, climate and terrain posters, biodiversity web atlases and open-source spatial analysis. Founder of GIS Club SU at Sofia University.
-- `name`: Bojan Baidanoff
+- `title`: Боян Байданов - Специалист по ГИС, картография и пространствен анализ
+- `description`: Портфолиото на Боян Байданов, студент по Геопространствени системи и технологии в Софийския университет "Св. Климент Охридски", основател и председател на ГИС клуба при СУ и създател на карти атласи, постери, уеб карти и пространствени анализи с отворен код.
+- `share-description`: Портфолио на Б. Байданов. Карти, атласи и уеб продукти. Сайт на ГИС клуба в СУ.
+- `name`: Боян Байданов
 - `footer`: © 2026 Bojan Baidanoff · Боян Байданов
-- `coordinates`: 42.6977° N, 23.3219° E
+- `coordinates`: 42.6977° с. д., 23.3219° и. ш.
 
 # Interface {#ui}
 
 <!-- Short labels for buttons and screen readers. -->
 
-- `skip`: Skip to content
-- `home`: Bojan Baidanoff, back to top
-- `sections`: Sections
-- `language`: Language
-- `theme`: Switch colour theme
-- `view-map`: View map
-- `filter`: Filter projects by theme
-- `viewer`: Map viewer
-- `viewer-close`: Close
-- `viewer-previous`: Previous image
-- `viewer-next`: Next image
+- `skip`: Пропусни
+- `home`: Боян Байданов, върни се от начало
+- `sections`: Секции
+- `language`: Език
+- `theme`: Смени темама
+- `view-map`: Виж картата
+- `filter`: Филтрирай проектите по тема
+- `viewer`: Картен преглед
+- `viewer-close`: Затвори
+- `viewer-previous`: Предишно изображение
+- `viewer-next`: Следващо изображение
 
-# Bojan Baidanoff {#hero}
+# Боян Байданов {#hero}
 
-I make maps that answer a question — atlases, research posters and web maps built from open spatial data.
+Създавам карти, които отговарят на въпроси. Правя атласи, научни постери и уеб карти с отворени данни.
 
-Third-year student of Geospatial Systems and Technologies at Sofia University “St. Kliment Ohridski”, and founder of [GIS Club SU](#club).
+Аз съм студент трети курс в специалност Геопространствени системи и технологии в Софийския университет "Св. Климент Охридски", където основах [ГИС клуба към СУ](#club).
 
 - `eyebrow`: 42°41′ N · 23°19′ E — Sofia, Bulgaria
 - `button-work`: See the work
