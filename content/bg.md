@@ -51,387 +51,385 @@ After editing, run:  python3 build.py   (it reports how much is still in English
 
 Аз съм студент трети курс в специалност Геопространствени системи и технологии в Софийския университет "Св. Климент Охридски", където основах [ГИС клуба към СУ](#club).
 
-- `eyebrow`: 42°41′ N · 23°19′ E — Sofia, Bulgaria
-- `button-work`: See the work
-- `button-club`: GIS Club SU
-- `button-tutoring`: GIS tutoring
-- `button-cv`: CV
-- `figure-label`: FIG. 01
-- `figure-caption`: Green and blue infrastructure of Sofia’s functional urban area
-- `image-alt`: Map of forest and grassland cores, green corridors and water bodies across the functional urban area of Sofia
-- `caption`: Potential elements of green and blue infrastructure in the functional urban area of Sofia, 2026. Data: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.
+- `eyebrow`: 42°41′ с. ш. · 23°19′ и. д. - София, България
+- `button-work`: Вижте проектите
+- `button-club`: ГИС клуб СУ
+- `button-tutoring`: Уроци по ГИС
+- `button-cv`: Автобиография
+- `figure-label`: ФИГ. 01
+- `figure-caption`: Зелена и синя инфраструктура във функционалния градски район на София
+- `image-alt`: Карта на горски и тревни ядра, зелени коридори и водни обекти във функционалния градски район на София
+- `caption`: Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София, 2026&nbsp;г. Данни: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.
 
-## Facts {#facts}
+## Факти {#facts}
 
-- **36** map sheets in the V4+2 atlas, redrawn from open data
-- **1,372** protected trees in my interactive map of Bulgaria’s register
-- **310** Sofia neighbourhoods scored for walking access to services
-- **15** founding members of GIS Club SU, which I chair
+- **36** картни листа в атласа V4+2, изчертани наново с отворени данни
+- **500** GB анализирани данни
+- **15** учредители на ГИС клуб СУ, на който съм председател
+- **20** студенти учат QGIS в ГИС клуба
 
-# Maps, posters and atlases {#work}
+# Карти, постери и атласи {#work}
 
-Recent projects from my studies and my own time. Select any map to see it full size.
+Скорошни проекти от следването ми и от свободното ми време. Изберете карта, за да я видите в пълен размер.
 
-- `nav`: Work
-- `eyebrow`: Selected work
+- `nav`: Проекти
+- `eyebrow`: Избрани проекти
 
-## V4+2 Map Atlas {#atlas}
+## Атлас V4+2 {#atlas}
 
-A 36-sheet A3 atlas rebuilt for the *Common Spatial Development Strategy of the V4+2 Countries* — Czechia, Hungary, Poland, Slovakia, Bulgaria and Romania. It keeps the themes of the 2014 original, but every map is redrawn from the latest open data with one legend system, one typeface and one palette, so sheets can be compared at a glance.
+Атлас от 36 листа във формат А3, създаден наново по *Общата стратегия за пространствено развитие на страните от V4+2* – Чехия, Унгария, Полша, Словакия, България и Румъния. Запазва темите на оригинала от 2014&nbsp;г., но всяка карта е изчертана наново с най-новите отворени данни, с една система от легенди, един шрифт и една палитра, така че листовете да се сравняват с един поглед.
 
-The barriers chapter adds a conflict analysis of planned transport infrastructure against Natura 2000 sites and high mountains.
-
-- `kicker`: Atlas · October 2026
-- `method`: **How:** one Python script per sheet on a shared style library (layout, legend, basemap, labels, projections); output as vector PDF and 300 dpi PNG.
+- `kicker`: Атлас · октомври 2026
+- `method`: **Как:** по един Python скрипт на лист върху обща стилова библиотека (оформление, легенда, подложка, надписи, проекции); резултат във векторен PDF и PNG с 300 dpi.
 - `tags`: Python, GeoPandas, Rasterio, Matplotlib, OpenStreetMap, QGIS
-- **36** sheets + cover
-- **6** countries
-- **~10 GB** source data
+- **36** листа + корица
+- **6** държави
+- **~10 GB** изходни данни
 
 <!-- The labels around the book. The pages of the book itself are in templates/atlas-book.html. -->
 
-- `book-label`: V4+2 Map Atlas, six selected sheets. Use the left and right arrow keys to turn pages.
-- `book-first`: Cover
-- `book-previous`: Previous page
-- `book-next`: Next page
-- `book-zoom`: View the sheets full size
-- `book-overview`: All 36 sheets at a glance →
-- `book-overview-caption`: All sheets of the V4+2 Map Atlas side by side: transport, technical infrastructure, population, economy, environment and barriers.
-- `book-hint`: Click a page, swipe, or use the arrow keys to turn pages.
+- `book-label`: Атлас V4+2, шест избрани листа. Прелиствайте със стрелките наляво и надясно.
+- `book-first`: Корица
+- `book-previous`: Предишна страница
+- `book-next`: Следваща страница
+- `book-zoom`: Вижте листовете в пълен размер
+- `book-overview`: Всички 36 листа с един поглед →
+- `book-overview-caption`: Всички листове на Атлас V4+2 един до друг: транспорт, техническа инфраструктура, население, икономика, околна среда и бариери.
+- `book-hint`: Кликнете върху страница, плъзнете или използвайте стрелките, за да прелиствате.
 
-## Filters {#filters}
+## Филтри {#filters}
 
-- `all`: All
-- `nature`: Nature
-- `climate`: Climate
-- `terrain`: Terrain
-- `people`: People and territory
+- `all`: Всички
+- `nature`: Природа
+- `climate`: Климат
+- `terrain`: Релеф
+- `people`: Хора и територия
 
-## Projects {#projects}
+## Проекти {#projects}
 
-### Bulgaria’s warming stripes {#stripes}
+### Затоплянето в България {#stripes}
 
-Ed Hawkins’ warming stripes, drawn separately for every Bulgarian province from 36 station records, 1961–2025. The last decade is 1.8 °C warmer than 1961–1990, and 2024 is the warmest year in the series. Where a station record has gaps, the value is estimated from neighbouring stations — and the poster says so.
+Климатичните ивици на Ед Хокинс, изчертани поотделно за всяка област в България по записите на 36 станции, 1961–2025&nbsp;г. Последното десетилетие е с 1,8&nbsp;°C по-топло от периода 1961–1990, а 2024&nbsp;г. е най-топлата в реда. Където в записите на някоя станция има пропуски, стойността е оценена по съседни станции – и постерът го казва.
 
-- `kicker`: Climate · A3 poster
-- `tags`: Python, Station data, Poster design
-- `image-alt`: Dark poster of Bulgaria where each province is filled with blue-to-red climate stripes
-- `caption`: Bulgaria’s warming stripes: one set of stripes per province, 1961–2025, with the records of 36 stations.
+- `kicker`: Климат · постер А3
+- `tags`: Python, Данни от станции, Дизайн на постери
+- `image-alt`: Тъмен постер на България, в който всяка област е запълнена с климатични ивици от синьо към червено
+- `caption`: Затоплянето в България: по един набор ивици за всяка област, 1961–2025&nbsp;г., по записите на 36 станции.
 
-### Ridges and viewpoints {#ridges}
+### Била и панорамни площадки {#ridges}
 
-Multiply an elevation model by −1 and ridges become valleys, so flow accumulation traces ridgelines as if they were rivers. From those lines I pick prominent points and compute what each one sees within 10 km. The best viewpoint, Maragidik (1,814 m), sees 92 km²; the highest point (2,368 m) sees only 4.9 km². Prominence matters more than height.
+Умножете цифров модел на релефа по −1 и билата се превръщат в долини, така че натрупването на оттока очертава билните линии, сякаш са реки. По тези линии избирам изпъкнали точки и изчислявам какво се вижда от всяка в радиус 10&nbsp;km. От най-добрата площадка, Марагидик (1814&nbsp;m), се виждат 92&nbsp;km²; от най-високата точка (2368&nbsp;m) – само 4,9&nbsp;km². Изпъкналостта е по-важна от височината.
 
-- `kicker`: Terrain · Research poster
+- `kicker`: Релеф · научен постер
 - `tags`: WhiteboxTools, gdal_viewshed, QGIS, Typst
-- `image-alt`: Five-panel poster showing an inverted elevation model, flow accumulation, ridgelines and viewsheds
-- `caption`: An inverted hydrological method for identifying mountain ridges, in five steps: inverted DEM, flow accumulation, ridgelines, viewpoint selection and visibility.
+- `image-alt`: Постер от пет панела с обърнат цифров модел на релефа, натрупване на оттока, билни линии и зони на видимост
+- `caption`: Обърнат хидроложки метод за откриване на планински била в пет стъпки: обърнат ЦМР, натрупване на оттока, билни линии, избор на площадки и видимост.
 
-### Kyustendil Species Atlas {#kyustendil}
+### Атлас на видовете в община Кюстендил {#kyustendil}
 
-I read the distribution maps from the Red Data Book of Bulgaria and from the reference book on invasive plants onto the UTM 10 × 10 km grid, then joined them to the municipal boundary and the Natura 2000 sites. Each square shows how many taxa it holds; select one to list the species. Built with AI assistance.
+Пренесох картите на разпространение от Червената книга на България и от справочника за инвазивните растения върху мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km, след което ги свързах с границата на общината и зоните от Натура 2000. Всеки квадрат показва колко таксона има в него; изберете го, за да видите списъка с видовете. Създаден с помощта на ИИ.
 
-- `kicker`: Biodiversity · Interactive web atlas
-- `image-alt`: Dark web interface with a map of Kyustendil municipality, protected sites and a 10 km grid
-- `caption`: Kyustendil Species Atlas: Natura 2000 sites over the UTM 10 × 10 km grid, with each site’s overlap with the municipality.
-- **185** Red Book taxa
-- **23** invasive plants
-- **7** Natura 2000 sites
-- `more`: Second view: species list →
-- `more-caption`: Kyustendil Species Atlas: selecting a grid square lists its invasive plants with photos and field notes.
+- `kicker`: Биоразнообразие · интерактивен уеб атлас
+- `image-alt`: Тъмен уеб интерфейс с карта на община Кюстендил, защитените зони и мрежа от 10&nbsp;km
+- `caption`: Атлас на видовете в община Кюстендил: зоните от Натура 2000 върху мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km и припокриването на всяка зона с общината.
+- **185** таксона от Червената книга
+- **23** инвазивни растения
+- **7** зони от Натура 2000
+- `more`: Втори изглед: списък на видовете →
+- `more-caption`: Атлас на видовете в община Кюстендил: при избор на квадрат се показват инвазивните растения в него със снимки и теренни бележки.
 
-### Green and blue infrastructure of Sofia {#gbi}
+### Зелена и синя инфраструктура на София {#gbi}
 
-Potential elements of green and blue infrastructure across Sofia’s functional urban area: forest and grassland cores, green and blue corridors, and the “stepping stones” that let species move through the city. An inset shows tree cover in the centre at street scale.
+Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София: горски и тревни ядра, зелени и сини коридори и „стъпалата“, по които видовете се придвижват през града. Врезка показва дървесната покривка в центъра в мащаба на улиците.
 
-- `kicker`: Nature · Map
+- `kicker`: Природа · карта
 - `tags`: QGIS, Urban Atlas 2021, Street Tree Layer
-- `image-alt`: Map of forest cores, grassland cores, corridors and water bodies around Sofia, with an inset of the city centre
-- `caption`: Potential elements of green and blue infrastructure in the functional urban area of Sofia, 2026. Data: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.
+- `image-alt`: Карта на горски ядра, тревни ядра, коридори и водни обекти около София, с врезка на центъра на града
+- `caption`: Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София, 2026&nbsp;г. Данни: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.
 
-### Forests of Burgas province {#burgas}
+### Горите в област Бургас {#burgas}
 
-Broadleaf, coniferous and mixed forest from CORINE Land Cover 2018. Forest covers about 40 % of the province and is concentrated in Strandzha, in the south.
+Широколистни, иглолистни и смесени гори по CORINE Land Cover 2018. Горите заемат около 40&nbsp;% от областта и са съсредоточени в Странджа, на юг.
 
-- `kicker`: Nature · Map
+- `kicker`: Природа · карта
 - `tags`: QGIS, CORINE 2018
-- `image-alt`: Map of Burgas province with forest cover in shades of green, densest in the south
-- `caption`: Where are the forests of Burgas province concentrated? Broadleaf, coniferous and mixed forest from CORINE Land Cover 2018.
+- `image-alt`: Карта на област Бургас с горската покривка в нюанси на зеленото, най-гъста на юг
+- `caption`: Къде са съсредоточени горите в област Бургас? Широколистни, иглолистни и смесени гори по CORINE Land Cover 2018.
 
-### One party, two different maps {#elections}
+### Една партия, две различни карти {#elections}
 
-A research poster from coursework in electoral geography. The question is methodological: does a party’s vote map in April predict where the presidential candidate it endorsed is strong in October? Across 265 municipalities the correlation is −0.16, and 0.02 once the municipalities led by one regional party are set aside — no relationship. The poster also states its limit: the data describe territories, not individual voters.
+Научен постер от курсова работа по електорална география. Въпросът е методологичен: предсказва ли картата на гласовете за една партия през април къде е силен кандидатът за президент, когото тя подкрепи през октомври? В 265 общини корелацията е −0,16, а след изключване на общините, в които води една регионална партия – 0,02, т.е. връзка няма. Постерът посочва и ограничението си: данните описват територии, а не отделни избиратели.
 
-- `kicker`: Electoral geography · A0 poster
-- `tags`: Spatial statistics, Typst, Claude Code
-- `image-alt`: Research poster with two choropleth maps of Bulgaria by municipality, a turnout chart and a scatter plot
-- `caption`: “One party, two different maps” — A0 research poster on the electoral geography of Bulgaria’s 2026 elections across 265 municipalities.
+- `kicker`: Електорална география · постер А0
+- `tags`: Пространствена статистика, Typst, Claude Code
+- `image-alt`: Научен постер с две картограми на България по общини, графика на избирателната активност и точкова диаграма
+- `caption`: „Една партия, две различни карти“ – научен постер А0 за електоралната география на изборите в България през 2026&nbsp;г. в 265 общини.
 
-### Where do people live in Sofia? {#population}
+### Къде живеят хората в София? {#population}
 
-Population density from address-level data of the National Statistical Institute, smoothed with kernel density estimation — the same technique as a heatmap of species records.
+Гъстота на населението по данни на Националния статистически институт на ниво адрес, изгладена с оценка на плътността с ядро – същата техника като при топлинна карта на находища на видове.
 
-- `kicker`: People · Map
-- `tags`: QGIS, Kernel density, NSI data
-- `image-alt`: Dark map of Sofia with population density glowing from purple to orange
-- `caption`: Where do people live in Sofia? Population density from address-level NSI data, smoothed with kernel density estimation.
+- `kicker`: Хора · карта
+- `tags`: QGIS, Плътност с ядро, Данни на НСИ
+- `image-alt`: Тъмна карта на София, в която гъстотата на населението свети от лилаво към оранжево
+- `caption`: Къде живеят хората в София? Гъстота на населението по данни на НСИ на ниво адрес, изгладена с оценка на плътността с ядро.
 
-### Land use in Stolichna municipality {#landuse}
+### Земеползване в Столична община {#landuse}
 
-The physical blocks of the municipality classified by land use, paired with a chart of each class’s share of the territory.
+Физическите блокове в общината, класифицирани по начин на земеползване, заедно с графика на дела на всеки клас от територията.
 
-- `kicker`: Territory · Map and chart
-- `tags`: QGIS, Land parcel data
-- `image-alt`: Land-use map of Stolichna municipality next to a bar chart of land-use shares
-- `caption`: Physical blocks in Stolichna municipality by land use, with a chart of each class’s share.
+- `kicker`: Територия · карта и графика
+- `tags`: QGIS, Данни за поземлени имоти
+- `image-alt`: Карта на земеползването в Столична община до стълбовидна диаграма с дяловете на класовете
+- `caption`: Физическите блокове в Столична община по начин на земеползване, с графика на дела на всеки клас.
 
-### Parcel staking plan {#staking}
+### Трасировъчен план на поземлени имоти {#staking}
 
-Geodesy coursework: a staking plan for three parcels at 1:1000 in the Bulgarian coordinate system BGS2005, with the coordinates of every point tabulated.
+Курсова работа по геодезия: трасировъчен план на три поземлени имота в мащаб 1:1000 в българската координатна система БГС2005, с таблица на координатите на всички точки.
 
-- `kicker`: Geodesy · Plan
-- `tags`: Surveying, BGS2005, 1:1000
-- `image-alt`: Black and white survey plan of three parcels with a table of point coordinates
-- `caption`: Staking plan for three parcels at 1:1000 in the Bulgarian coordinate system BGS2005, with the coordinate table of every point.
+- `kicker`: Геодезия · план
+- `tags`: Геодезическо заснемане, БГС2005, 1:1000
+- `image-alt`: Черно-бял геодезически план на три имота с таблица на координатите на точките
+- `caption`: Трасировъчен план на три поземлени имота в мащаб 1:1000 в координатна система БГС2005, с таблица на координатите на всички точки.
 
-### Climate zones and world temperature {#climate}
+### Климатични пояси и температура на света {#climate}
 
-A teaching poster of Alisov’s climate zones that ties each zone to climatograms of real stations — temperature and precipitation by month. Its companion sheet maps mean January and July air temperature from WorldClim 2.1, 1970–2000.
+Учебен постер на климатичните пояси по Алисов, който свързва всеки пояс с климатограми на реални станции – температура и валежи по месеци. Придружаващият го лист показва средната температура на въздуха през януари и юли по WorldClim 2.1, 1970–2000&nbsp;г.
 
-- `kicker`: Climate · A1 poster and maps
-- `image-alt`: World map of climate zones in warm and cool bands, surrounded by small station climatograms
-- `caption`: Climate zones after Alisov’s classification, with climatograms of stations around the world (A1 poster).
-- `more`: Second sheet: January and July →
-- `more-caption`: Mean monthly air temperature in January and July, 1970–2000. Source: WorldClim 2.1.
+- `kicker`: Климат · постер А1 и карти
+- `image-alt`: Карта на света с климатичните пояси в топли и студени ивици, заобиколена от малки климатограми на станции
+- `caption`: Климатични пояси по класификацията на Алисов, с климатограми на станции от цял свят (постер А1).
+- `more`: Втори лист: януари и юли →
+- `more-caption`: Средна месечна температура на въздуха през януари и юли, 1970–2000&nbsp;г. Източник: WorldClim 2.1.
 
-## Earlier maps {#earlier}
+## По-ранни карти {#earlier}
 
-- `period`: 2025 – early 2026
+- `period`: 2025 – началото на 2026
 
-### Fitness accessibility index {#gym}
+### Индекс на достъпност до фитнес зали {#gym}
 
-- `note`: Sofia · hex grid, weighted index
-- `image-alt`: Hexagonal grid map of Sofia in purple and orange showing the need for gyms
-- `caption`: Where are gyms needed in Sofia? A weighted index on a hexagonal grid: population density (0.7) and distance to the nearest gym (0.3). Data: Meta population, OpenStreetMap.
+- `note`: София · шестоъгълна мрежа, претеглен индекс
+- `image-alt`: Карта на София с шестоъгълна мрежа в лилаво и оранжево, показваща нуждата от фитнес зали
+- `caption`: Къде в София са нужни фитнес зали? Претеглен индекс върху шестоъгълна мрежа: гъстота на населението (0,7) и разстояние до най-близката зала (0,3). Данни: Meta population, OpenStreetMap.
 
-### GDP per capita in Europe {#gdp}
+### БВП на човек от населението в Европа {#gdp}
 
-- `note`: Eurostat · choropleth
-- `image-alt`: Choropleth map of Europe by GDP per capita
-- `caption`: GDP per capita across Europe, from Eurostat data.
+- `note`: Евростат · картограма
+- `image-alt`: Картограма на Европа по БВП на човек от населението
+- `caption`: БВП на човек от населението в Европа по данни на Евростат.
 
-### Rental market, Gresham, Oregon {#gresham}
+### Пазар на наеми, Грешам, Орегон {#gresham}
 
-- `note`: Demographics · density mapping
-- `image-alt`: Map of Gresham, Oregon showing rental unit density
-- `caption`: Rental unit density against age demographics in Gresham, Oregon.
+- `note`: Демография · картографиране на гъстота
+- `image-alt`: Карта на Грешам, Орегон, с гъстотата на жилищата под наем
+- `caption`: Гъстота на жилищата под наем спрямо възрастовата структура в Грешам, Орегон.
 
-### NYC pedestrian flows {#nyc}
+### Пешеходни потоци в Ню Йорк {#nyc}
 
-- `note`: NYC Open Data · density
-- `image-alt`: Vertical map of Manhattan with pedestrian flow highlighted
-- `caption`: High-traffic pedestrian corridors in New York City, from NYC Open Data.
+- `note`: NYC Open Data · гъстота
+- `image-alt`: Вертикална карта на Манхатън с открояване на пешеходните потоци
+- `caption`: Натоварени пешеходни коридори в Ню Йорк по данни на NYC Open Data.
 
-### NDVI, the Netherlands {#ndvi}
+### NDVI, Нидерландия {#ndvi}
 
-- `note`: Sentinel-2 · raster analysis
-- `image-alt`: Satellite-derived vegetation index map of the Netherlands
-- `caption`: NDVI from Sentinel-2 imagery over the Netherlands.
+- `note`: Sentinel-2 · растерен анализ
+- `image-alt`: Карта на вегетационен индекс на Нидерландия по спътникови данни
+- `caption`: NDVI по изображения от Sentinel-2 за Нидерландия.
 
-# GIS Club SU {#club}
+# ГИС клуб СУ {#club}
 
-In October 2026 I founded a student club at Sofia University for everyone who likes maps, data and satellites. I serve as its chair.
+През октомври 2026&nbsp;г. основах студентски клуб в Софийския университет за всички, които обичат карти, данни и спътници. Аз съм негов председател.
 
-- `nav`: GIS Club SU
-- `eyebrow`: Community
-- `second-name`: ГИС клуб СУ
+- `nav`: ГИС клуб СУ
+- `eyebrow`: Общност
+- `second-name`: GIS Club SU
 
-## Story {#club-story}
+## История {#club-story}
 
-The founding general assembly on 9 October 2026 adopted the club’s statute and elected me chair. Fifteen students signed the founding protocol. The statute sets out how the club runs — a general assembly, a managing board and a chair elected each academic year — so that every next generation can pick up where the last one stopped.
+Учредителното общо събрание на 9 октомври 2026&nbsp;г. прие устава на клуба и ме избра за председател. Петнадесет студенти подписаха учредителния протокол. Уставът урежда как работи клубът – общо събрание, управителен съвет и председател, избиран всяка академична година, – така че всяко следващо поколение да продължи оттам, докъдето е стигнало предишното.
 
-Membership is free and open to students, lecturers, PhD students and anyone interested in GIS and remote sensing. ArcGIS or QGIS, everyone is welcome.
+Членството е безплатно и е открито за студенти, преподаватели, докторанти и всички, които се интересуват от ГИС и дистанционни изследвания. ArcGIS или QGIS – всеки е добре дошъл.
 
-- `note`: I also designed the club’s visual identity: a Swiss-style system in navy and stepped blues, built around contour bands and a point-cloud image of the university’s Rectorate.
+- `note`: Създадох и визуалната идентичност на клуба: система в швейцарски стил в тъмносиньо и степенувани сини тонове, изградена около хипсометрични пояси и изображение на Ректората на университета като облак от точки.
 
-## What the club is for {#club-goals}
+## За какво е клубът {#club-goals}
 
-- **Make geospatial technology visible** to students and to the public.
-- **Build an informal community** where students and lecturers share knowledge and ideas.
-- **Support members’ growth**, academic and professional.
-- **Connect the university with industry** in geospatial technology.
+- **Да направи геопространствените технологии видими** за студентите и за обществото.
+- **Да изгради неформална общност**, в която студенти и преподаватели споделят знания и идеи.
+- **Да подкрепя развитието на членовете си** – академично и професионално.
+- **Да свързва университета с бизнеса** в областта на геопространствените технологии.
 
-## How {#club-how}
+## Как {#club-how}
 
-Public lectures, seminars and workshops · guest speakers from academia and industry · hackathons and map challenges · field trips · partnerships with departments and organisations.
+Публични лекции, семинари и работилници · гост-лектори от академичните среди и бизнеса · хакатони и картографски предизвикателства · теренни излети · партньорства с катедри и организации.
 
-## Timeline {#club-timeline}
+## Хронология {#club-timeline}
 
-### Founding general assembly {#club-founding}
+### Учредително общо събрание {#club-founding}
 
-- `when`: 9 October 2026
-- `detail`: Statute adopted · chair elected
+- `when`: 9 октомври 2026
+- `detail`: Приет устав · избран председател
 
-### First seminar: Introduction to GIS {#club-seminar}
+### Първи семинар: Въведение в ГИС {#club-seminar}
 
-- `when`: 11 November 2026
-- `detail`: Hands-on with QGIS, using a worksheet I prepared · Room 287, north wing of the Rectorate
+- `when`: 11 ноември 2026
+- `detail`: Практика с QGIS по работен лист, който подготвих · зала 287, северно крило на Ректората
 
-### Lectures, workshops, hackathons {#club-next}
+### Лекции, работилници, хакатони {#club-next}
 
-- `when`: Next
-- `detail`: Map challenges, field trips and meetings with specialists from the university and industry
+- `when`: Предстои
+- `detail`: Картографски предизвикателства, теренни излети и срещи със специалисти от университета и бизнеса
 
-## Announcement {#club-post}
+## Обява {#club-post}
 
-- `image-alt`: Navy announcement poster in Bulgarian for the club’s first seminar, with contour lines and the club emblem
-- `caption`: Announcement for the first seminar of GIS Club SU, 11 November 2026: “Introduction to GIS — we’ll work with real GIS software (QGIS)”.
-- `note`: Announcement for the first seminar, in the club’s visual identity
-- `emblem-alt`: Club emblem: the Rectorate of Sofia University rendered as a coloured point cloud
+- `image-alt`: Тъмносин плакат за първия семинар на клуба с изохипси и емблемата на клуба
+- `caption`: Обява за първия семинар на ГИС клуб СУ, 11 ноември 2026&nbsp;г.: „Въведение в ГИС – ще работим с реален ГИС софтуер (QGIS)“.
+- `note`: Обява за първия семинар във визуалната идентичност на клуба
+- `emblem-alt`: Емблема на клуба: Ректоратът на Софийския университет, изобразен като цветен облак от точки
 
-# Private GIS tutoring {#tutoring}
+# Частни уроци по ГИС {#tutoring}
 
-One-to-one lessons in QGIS for students, researchers and professionals who need maps for their own work. We start from your question and your data, not from a fixed syllabus.
+Индивидуални уроци по QGIS за студенти, изследователи и специалисти, на които им трябват карти за собствената им работа. Започваме от вашия въпрос и вашите данни, а не от готова програма.
 
-- `nav`: Tutoring
-- `eyebrow`: Teaching
-- `button`: Ask about lessons
-- `subject`: GIS lessons
-- `note-title`: Practical details
-- `note`: Lessons are one-to-one and online, in Bulgarian or English. QGIS is free, so a laptop is all you need. Write to me with what you want to map and we will plan from there.
+- `nav`: Уроци
+- `eyebrow`: Обучение
+- `button`: Попитайте за уроци
+- `subject`: Уроци по ГИС
+- `note-title`: Практически подробности
+- `note`: Уроците са индивидуални и онлайн, на български или английски. QGIS е безплатен, така че ви трябва само лаптоп. Пишете ми какво искате да картографирате и ще планираме оттам.
 
-## How it works {#tutoring-steps}
+## Как протича {#tutoring-steps}
 
-- **We start with your question.** Before the first lesson I ask what you study or work on, what data you have, and which map you want to have a month from now.
-- **You finish a map in the first lesson.** We build it step by step in QGIS, on a place that matters to you.
-- **Then we move to your own data.** Each lesson ends with something you can use: a layer, a figure for a paper, or a worksheet to repeat the steps on your own.
+- **Започваме с вашия въпрос.** Преди първия урок ви питам какво учите или с какво се занимавате, какви данни имате и каква карта искате да имате след месец.
+- **Завършвате карта още на първия урок.** Изграждаме я стъпка по стъпка в QGIS, за място, което е важно за вас.
+- **После минаваме към вашите данни.** Всеки урок завършва с нещо полезно: слой, фигура за статия или работен лист, по който да повторите стъпките сами.
 
-## What we can cover {#tutoring-topics}
+## Какво можем да обхванем {#tutoring-topics}
 
-### A first map in QGIS {#topic-first}
+### Първа карта в QGIS {#topic-first}
 
-Layers, coordinate systems and filters, through to a finished layout with a legend and a scale bar.
+Слоеве, координатни системи и филтри – до завършено оформление с легенда и линеен мащаб.
 
-- `tools`: Layers · Identify · Print layout
+- `tools`: Слоеве · Идентифициране · Оформление за печат
 
-### Points and hotspots {#topic-hotspots}
+### Точки и горещи точки {#topic-hotspots}
 
-Where records cluster — and why a heatmap often shows where people go, not where something is most common.
+Къде се струпват наблюденията – и защо топлинната карта често показва къде ходят хората, а не къде нещо е най-често срещано.
 
-- `tools`: Heatmap (kernel density)
+- `tools`: Топлинна карта (плътност с ядро)
 
-### Grids and counts {#topic-grids}
+### Мрежи и преброяване {#topic-grids}
 
-Records summarised by grid squares, such as the UTM 10 × 10 km grid used in distribution atlases.
+Наблюдения, обобщени по квадрати от мрежа, като мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km, използвана в атласите на разпространение.
 
 - `tools`: Create Grid · Count Points in Polygon
 
-### Your own layers {#topic-digitising}
+### Ваши собствени слоеве {#topic-digitising}
 
-Polygons drawn from satellite imagery and fieldwork, with their types and areas in the attribute table.
+Полигони, очертани по спътникови изображения и теренна работа, с типа и площта им в атрибутната таблица.
 
-- `tools`: Digitising · Field Calculator
+- `tools`: Дигитализиране · Field Calculator
 
-### Rasters and satellite data {#topic-rasters}
+### Растери и спътникови данни {#topic-rasters}
 
-Elevation models and Sentinel-2 images: vegetation indices, change over time, and what the pixels can support.
+Цифрови модели на релефа и изображения от Sentinel-2: вегетационни индекси, промени във времето и какво всъщност могат да покажат пикселите.
 
 - `tools`: Raster Calculator · NDVI
 
-### AI in your workflow, used openly {#topic-ai}
+### ИИ в работата ви, използван открито {#topic-ai}
 
-Where AI saves time, how to check what it returns, and how to state its role next to your data sources.
+Къде ИИ пести време, как да проверявате какво връща и как да посочвате ролята му до източниците на данни.
 
-- `tools`: Checking results · Disclosure
+- `tools`: Проверка на резултатите · Деклариране
 
-# Open-source projects {#code}
+# Проекти с отворен код {#code}
 
-Reproducible analyses and interactive maps on [GitHub](https://github.com/bbaid).
+Възпроизводими анализи и интерактивни карти в [GitHub](https://github.com/bbaid).
 
-- `nav`: Code
-- `eyebrow`: Code and web maps
-- `label-map`: Interactive map
-- `label-code`: Code
-- `label-team`: team project
+- `nav`: Код
+- `eyebrow`: Код и уеб карти
+- `label-map`: Интерактивна карта
+- `label-code`: Код
+- `label-team`: отборен проект
 
-## Sofia — access to basic services {#repo-services}
+## София – достъп до основни услуги {#repo-services}
 
-How well Sofia’s 310 neighbourhoods are served by hospitals, schools, kindergartens, police, supermarkets and pharmacies. OpenStreetMap facilities meet the Census 2021 population grid on a pedestrian network: nearest-service walking distance, 10-minute coverage, a composite access index and LISA hotspots.
+Колко добре 310-те квартала на София са обслужени от болници, училища, детски градини, полиция, супермаркети и аптеки. Обектите от OpenStreetMap се срещат с мрежата на населението от преброяване 2021 върху пешеходна мрежа: пешеходно разстояние до най-близката услуга, покритие в рамките на 10 минути, съставен индекс на достъпност и LISA клъстери.
 
 - `tags`: Python, OSMnx, GeoPandas, PySAL, Mapbox GL JS
 
-## Venerable trees of Bulgaria {#repo-trees}
+## Вековните дървета на България {#repo-trees}
 
-A bilingual interactive map of 1,372 protected centuries-old trees from the national register, grouped by species, with age, height and girth for each tree. A small Python script converts the register spreadsheet to GeoJSON.
+Двуезична интерактивна карта на 1372 защитени вековни дървета от националния регистър, групирани по вид, с възраст, височина и обиколка на всяко дърво. Малък Python скрипт превръща таблицата на регистъра в GeoJSON.
 
 - `tags`: Mapbox GL JS, Python, GeoJSON, GitHub Actions
 
-## China’s niche industry towns {#repo-china}
+## Специализираните индустриални градове в Китай {#repo-china}
 
-A map of 61 Chinese towns and counties that make a large share of one product — buttons in Qiaotou, oil paintings in Dafen. Every coordinate is checked against OpenStreetMap, and the README is frank about which market-share claims are only “reported”.
+Карта на 61 китайски града и окръга, които произвеждат голям дял от един продукт – копчета в Цяотоу, маслени картини в Дафън. Всяка координата е проверена спрямо OpenStreetMap, а README файлът открито казва кои твърдения за пазарен дял са само „съобщени“.
 
 - `tags`: Leaflet, Python, Nominatim, GitHub Actions
 
-## The average colour of every country {#repo-colour}
+## Средният цвят на всяка държава {#repo-colour}
 
-The mean Sentinel-2 satellite colour of each country and of Bulgaria’s regions, provinces and municipalities, written back into the shapefile. A pure-Python re-creation of Erin Davis’s project: download, mask to the border, average with a latitude weight — no GDAL required.
+Средният цвят по спътникови изображения от Sentinel-2 за всяка държава и за районите, областите и общините в България, записан обратно в shapefile файла. Пресъздаване на проекта на Ерин Дейвис изцяло на Python: изтегляне, маскиране по границата, осредняване с тегло по географска ширина – без нужда от GDAL.
 
 - `tags`: Python, Sentinel-2 cloudless, Pillow, WMS
 
-## Dogs of Sofia {#repo-dogs}
+## Кучетата на София {#repo-dogs}
 
-A pipeline that downloads and cleans Sofia’s dog registry and the Call Sofia complaint signals, aggregates them by district and publishes a web map with district shading and complaint points.
+Поточна обработка, която изтегля и почиства регистъра на кучетата в София и сигналите за оплаквания в Call Sofia, обобщава ги по райони и публикува уеб карта с оцветени райони и точки на сигналите.
 
-- `tags`: Python, GeoPandas, Web scraping, Mapbox GL JS
+- `tags`: Python, GeoPandas, Уеб скрейпинг, Mapbox GL JS
 
-## NeroSense — adaptive water intelligence {#repo-nerosense}
+## NeroSense – адаптивно наблюдение на водите {#repo-nerosense}
 
-Our team’s entry for the 11th CASSINI Hackathon. Satellite indicators of chlorophyll, turbidity and temperature are turned into priority maps that tell an autonomous surface robot where to sample — tested on phytoplankton blooms in the Iskar reservoir.
+Участието на нашия отбор в 11-ия хакатон CASSINI. Спътникови показатели за хлорофил, мътност и температура се превръщат в карти на приоритетите, които показват на автономен надводен робот къде да взема проби – изпробвано върху цъфтежи на фитопланктон в язовир „Искър“.
 
 - `tags`: Sentinel-2/3, Google Earth Engine, FastAPI, PostgreSQL
 
-# Background and toolbox {#about}
+# Образование и инструменти {#about}
 
-I study how places work and how to show it clearly. Most of my projects start with a question — where is something missing, what changed, what can be seen from here — and end as a map someone else can read without me in the room.
+Изучавам как функционират местата и как да го покажа ясно. Повечето ми проекти започват с въпрос – къде липсва нещо, какво се е променило, какво се вижда оттук – и завършват като карта, която някой друг може да прочете и без мен.
 
-I work across the whole chain: finding and cleaning open data, analysis in Python and QGIS, and the layout of the final sheet. I’m most interested in GIS and remote sensing for research, and in teaching them — which is why I started GIS Club SU and prepare introductory QGIS lessons.
+Работя по цялата верига: намиране и почистване на отворени данни, анализ в Python и QGIS и оформление на крайния лист. Най-много ме интересуват ГИС и дистанционните изследвания за научни цели, както и преподаването им – затова основах ГИС клуб СУ и подготвям въвеждащи уроци по QGIS.
 
-- `nav`: About
-- `eyebrow`: About
-- `languages`: **Languages:** Bulgarian (native) · English (C2 — Cambridge English: Advanced, 2025)
+- `nav`: За мен
+- `eyebrow`: За мен
+- `languages`: **Езици:** български (роден) · английски (C2 – Cambridge English: Advanced, 2025)
 
-## Education and experience {#about-path}
+## Образование и опит {#about-path}
 
-- **2023 – now** **Sofia University “St. Kliment Ohridski”** — BSc Geospatial Systems and Technologies, Faculty of Geology and Geography. Grade average 5.95 / 6.00. Three Erasmus+ exchanges.
-- **2026 – now** **GIS Club SU** — founder and chair.
-- **2026** **CASSINI Hackathon**, 11th edition — team NeroSense.
-- **2020 – 2023** **Uni4kids** — intern, science communicator.
-- **2018 – 2023** **National High School of Mathematics and Natural Sciences** “Acad. Lyubomir Chakalov”, Sofia.
+- **2023 – сега** **Софийски университет „Св. Климент Охридски“** – бакалавър, „Геопространствени системи и технологии“, Геолого-географски факултет. Среден успех 5,95 / 6,00. Три обмена по „Еразъм+“.
+- **2026 – сега** **ГИС клуб СУ** – основател и председател.
+- **2026** **Хакатон CASSINI**, 11-о издание – отбор NeroSense.
+- **2020 – 2023** **Uni4kids** – стажант, комуникатор на науката.
+- **2018 – 2023** **Национална природо-математическа гимназия** „Акад. Любомир Чакалов“, София.
 
-## Toolbox {#toolbox}
+## Инструменти {#toolbox}
 
-- **GIS** QGIS · ArcGIS Pro · ArcGIS Online · StoryMaps
-- **Code and data** Python (GeoPandas, Rasterio, Pandas, Matplotlib, OSMnx) · GDAL · WhiteboxTools · SQL and PostGIS
-- **Remote sensing** Sentinel-2 · CORINE and Copernicus layers · DEM analysis, viewsheds, NDVI
-- **Web maps** Mapbox GL JS · Leaflet · GitHub Pages and Actions
-- **Layout** QGIS layouts · Typst · Affinity
+- **ГИС** QGIS · ArcGIS Pro · ArcGIS Online · StoryMaps
+- **Код и данни** Python (GeoPandas, Rasterio, Pandas, Matplotlib, OSMnx) · GDAL · WhiteboxTools · SQL и PostGIS
+- **Дистанционни изследвания** Sentinel-2 · CORINE и слоеве на Copernicus · анализ на ЦМР, видимост, NDVI
+- **Уеб карти** Mapbox GL JS · Leaflet · GitHub Pages и Actions
+- **Оформление** оформления в QGIS · Typst · Affinity
 
-## How I work with AI {#ai}
+## Как работя с ИИ {#ai}
 
-- **I set the question and the method.** AI carries out steps; it doesn’t decide what I study.
-- **I check every result** against the source data before it reaches the map.
-- **I say openly what AI did** — on the map itself, next to the data sources.
+- **Аз задавам въпроса и метода.** ИИ изпълнява стъпки; той не решава какво изследвам.
+- **Проверявам всеки резултат** спрямо изходните данни, преди да стигне до картата.
+- **Казвам открито какво е направил ИИ** – върху самата карта, до източниците на данни.
 
-# Have a question a map could answer? {#contact}
+# Имате въпрос, на който карта може да отговори? {#contact}
 
-I’m open to internships, research collaborations and guest talks for GIS Club SU.
+Отворен съм за стажове, научно сътрудничество и гостуващи лекции за ГИС клуб СУ.
 
-- `nav`: Contact
-- `eyebrow`: Contact
+- `nav`: Контакт
+- `eyebrow`: Контакт
 - `label-linkedin`: LinkedIn
 - `label-github`: GitHub
-- `label-cv`: CV
-- `label-cv-pdf`: CV (PDF)
+- `label-cv`: Автобиография
+- `label-cv-pdf`: Автобиография (PDF)
 
 # Боян Байданов {#cv}
 

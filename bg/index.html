@@ -38,12 +38,12 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
       <span class="brand-name">Боян Байданов</span>
     </a>
     <nav class="nav" aria-label="Секции">
-      <a href="#work">Work</a>
-      <a href="#club">GIS Club SU</a>
-      <a href="#tutoring">Tutoring</a>
-      <a href="#code">Code</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">Проекти</a>
+      <a href="#club">ГИС клуб СУ</a>
+      <a href="#tutoring">Уроци</a>
+      <a href="#code">Код</a>
+      <a href="#about">За мен</a>
+      <a href="#contact">Контакт</a>
     </nav>
     <div class="lang" role="group" aria-label="Език" data-lang-toggle><a href="../" lang="en" hreflang="en">EN</a><a href="../bg/" lang="bg" hreflang="bg" aria-current="true">BG</a></div>
     <button class="theme-toggle" type="button" id="themeToggle" aria-label="Смени темата">
@@ -71,32 +71,32 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
   </svg>
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="eyebrow"><span class="dot"></span>42°41′ N · 23°19′ E — Sofia, Bulgaria</p>
+      <p class="eyebrow"><span class="dot"></span>42°41′ с. ш. · 23°19′ и. д. - София, България</p>
       <h1>Боян Байданов</h1>
       <p class="hero-lead">Създавам карти, които отговарят на въпроси. Правя атласи, научни постери и уеб карти с отворени данни.</p>
       <p class="hero-sub">Аз съм студент трети курс в специалност Геопространствени системи и технологии в Софийския университет "Св. Климент Охридски", където основах <a href="#club">ГИС клуба към СУ</a>.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#work">See the work</a>
-        <a class="btn" href="#club">GIS Club SU</a>
-        <a class="btn" href="#tutoring">GIS tutoring</a>
-        <a class="btn btn-ghost" href="cv/">CV</a>
+        <a class="btn btn-primary" href="#work">Вижте проектите</a>
+        <a class="btn" href="#club">ГИС клуб СУ</a>
+        <a class="btn" href="#tutoring">Уроци по ГИС</a>
+        <a class="btn btn-ghost" href="cv/">Автобиография</a>
       </div>
     </div>
     <figure class="hero-map">
-      <button class="frame" type="button" data-lightbox data-group="gbi" data-full="../assets/img/sofia-green-blue.webp" data-caption="Potential elements of green and blue infrastructure in the functional urban area of Sofia, 2026. Data: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.">
-        <img src="../assets/img/sofia-green-blue-sm.webp" width="1000" height="707" fetchpriority="high" alt="Map of forest and grassland cores, green corridors and water bodies across the functional urban area of Sofia">
+      <button class="frame" type="button" data-lightbox data-group="gbi" data-full="../assets/img/sofia-green-blue.webp" data-caption="Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София, 2026&nbsp;г. Данни: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.">
+        <img src="../assets/img/sofia-green-blue-sm.webp" width="1000" height="707" fetchpriority="high" alt="Карта на горски и тревни ядра, зелени коридори и водни обекти във функционалния градски район на София">
         <span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
       </button>
-      <figcaption><span class="mono">FIG. 01</span> Green and blue infrastructure of Sofia’s functional urban area</figcaption>
+      <figcaption><span class="mono">ФИГ. 01</span> Зелена и синя инфраструктура във функционалния градски район на София</figcaption>
     </figure>
   </div>
 
   <div class="wrap">
     <dl class="facts">
-      <div><dt>36</dt><dd>map sheets in the V4+2 atlas, redrawn from open data</dd></div>
-      <div><dt>1,372</dt><dd>protected trees in my interactive map of Bulgaria’s register</dd></div>
-      <div><dt>310</dt><dd>Sofia neighbourhoods scored for walking access to services</dd></div>
-      <div><dt>15</dt><dd>founding members of GIS Club SU, which I chair</dd></div>
+      <div><dt>36</dt><dd>картни листа в атласа V4+2, изчертани наново с отворени данни</dd></div>
+      <div><dt>500</dt><dd>GB анализирани данни</dd></div>
+      <div><dt>15</dt><dd>учредители на ГИС клуб СУ, на който съм председател</dd></div>
+      <div><dt>20</dt><dd>студенти учат QGIS в ГИС клуба</dd></div>
     </dl>
   </div>
 </section>
@@ -105,33 +105,32 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <section class="section" id="work">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">01</span> Selected work</p>
-      <h2>Maps, posters and atlases</h2>
-      <p class="section-lead">Recent projects from my studies and my own time. Select any map to see it full size.</p>
+      <p class="eyebrow"><span class="mono">01</span> Избрани проекти</p>
+      <h2>Карти, постери и атласи</h2>
+      <p class="section-lead">Скорошни проекти от следването ми и от свободното ми време. Изберете карта, за да я видите в пълен размер.</p>
     </header>
 
     <!-- Featured: V4+2 atlas, as a book with turning pages -->
     <article class="feature reveal" id="atlas">
       <div class="feature-head">
         <div class="feature-body">
-          <p class="kicker">Atlas · October 2026</p>
-          <h3>V4+2 Map Atlas</h3>
-          <p>A 36-sheet A3 atlas rebuilt for the <em>Common Spatial Development Strategy of the V4+2 Countries</em> — Czechia, Hungary, Poland, Slovakia, Bulgaria and Romania. It keeps the themes of the 2014 original, but every map is redrawn from the latest open data with one legend system, one typeface and one palette, so sheets can be compared at a glance.</p>
-          <p>The barriers chapter adds a conflict analysis of planned transport infrastructure against Natura 2000 sites and high mountains.</p>
+          <p class="kicker">Атлас · октомври 2026</p>
+          <h3>Атлас V4+2</h3>
+          <p>Атлас от 36 листа във формат А3, създаден наново по <em>Общата стратегия за пространствено развитие на страните от V4+2</em> – Чехия, Унгария, Полша, Словакия, България и Румъния. Запазва темите на оригинала от 2014&nbsp;г., но всяка карта е изчертана наново с най-новите отворени данни, с една система от легенди, един шрифт и една палитра, така че листовете да се сравняват с един поглед.</p>
         </div>
         <div class="feature-aside">
           <dl class="mini-facts">
-            <div><dt>36</dt><dd>sheets + cover</dd></div>
-            <div><dt>6</dt><dd>countries</dd></div>
-            <div><dt>~10 GB</dt><dd>source data</dd></div>
+            <div><dt>36</dt><dd>листа + корица</dd></div>
+            <div><dt>6</dt><dd>държави</dd></div>
+            <div><dt>~10 GB</dt><dd>изходни данни</dd></div>
           </dl>
-          <p class="method"><b>How:</b> one Python script per sheet on a shared style library (layout, legend, basemap, labels, projections); output as vector PDF and 300 dpi PNG.</p>
+          <p class="method"><b>Как:</b> по един Python скрипт на лист върху обща стилова библиотека (оформление, легенда, подложка, надписи, проекции); резултат във векторен PDF и PNG с 300 dpi.</p>
           <ul class="tags"><li>Python</li><li>GeoPandas</li><li>Rasterio</li><li>Matplotlib</li><li>OpenStreetMap</li><li>QGIS</li></ul>
         </div>
       </div>
 
       <div class="book-wrap">
-        <div class="book" id="atlasBook" tabindex="0" role="group" aria-roledescription="book" aria-label="V4+2 Map Atlas, six selected sheets. Use the left and right arrow keys to turn pages.">
+        <div class="book" id="atlasBook" tabindex="0" role="group" aria-roledescription="book" aria-label="Атлас V4+2, шест избрани листа. Прелиствайте със стрелките наляво и надясно.">
           <ol class="book-pages">
             <li class="page page-cover" data-title="Cover">
               <svg class="cover-art" viewBox="0 0 300 424" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -197,154 +196,154 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
         </div>
 
         <div class="book-bar">
-          <button type="button" class="book-btn" data-book-prev aria-label="Previous page" aria-controls="atlasBook">
+          <button type="button" class="book-btn" data-book-prev aria-label="Предишна страница" aria-controls="atlasBook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
           </button>
-          <p class="book-label" data-book-label aria-live="polite">Cover</p>
-          <button type="button" class="book-btn" data-book-next aria-label="Next page" aria-controls="atlasBook">
+          <p class="book-label" data-book-label aria-live="polite">Корица</p>
+          <button type="button" class="book-btn" data-book-next aria-label="Следваща страница" aria-controls="atlasBook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
           </button>
         </div>
         <p class="book-actions">
-          <button type="button" class="more" data-book-zoom>View the sheets full size</button>
-          <button type="button" class="more" data-lightbox data-group="v4-overview" data-full="../assets/img/v4-atlas-overview.webp" data-caption="All sheets of the V4+2 Map Atlas side by side: transport, technical infrastructure, population, economy, environment and barriers.">All 36 sheets at a glance →</button>
+          <button type="button" class="more" data-book-zoom>Вижте листовете в пълен размер</button>
+          <button type="button" class="more" data-lightbox data-group="v4-overview" data-full="../assets/img/v4-atlas-overview.webp" data-caption="Всички листове на Атлас V4+2 един до друг: транспорт, техническа инфраструктура, население, икономика, околна среда и бариери.">Всички 36 листа с един поглед →</button>
         </p>
-        <p class="book-hint">Click a page, swipe, or use the arrow keys to turn pages.</p>
+        <p class="book-hint">Кликнете върху страница, плъзнете или използвайте стрелките, за да прелиствате.</p>
       </div>
     </article>
 
     <div class="filters" role="group" aria-label="Филтрирай проектите по тема">
-      <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="chip" data-filter="nature" aria-pressed="false">Nature</button>
-      <button type="button" class="chip" data-filter="climate" aria-pressed="false">Climate</button>
-      <button type="button" class="chip" data-filter="terrain" aria-pressed="false">Terrain</button>
-      <button type="button" class="chip" data-filter="people" aria-pressed="false">People and territory</button>
+      <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">Всички</button>
+      <button type="button" class="chip" data-filter="nature" aria-pressed="false">Природа</button>
+      <button type="button" class="chip" data-filter="climate" aria-pressed="false">Климат</button>
+      <button type="button" class="chip" data-filter="terrain" aria-pressed="false">Релеф</button>
+      <button type="button" class="chip" data-filter="people" aria-pressed="false">Хора и територия</button>
     </div>
 
     <div class="grid" id="projectGrid">
 
       <article class="card reveal" data-cat="climate">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="stripes" data-full="../assets/img/warming-stripes.webp" data-caption="Bulgaria’s warming stripes: one set of stripes per province, 1961–2025, with the records of 36 stations.">
-          <img src="../assets/img/warming-stripes-sm.webp" width="1000" height="707" loading="lazy" alt="Dark poster of Bulgaria where each province is filled with blue-to-red climate stripes">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="stripes" data-full="../assets/img/warming-stripes.webp" data-caption="Затоплянето в България: по един набор ивици за всяка област, 1961–2025&nbsp;г., по записите на 36 станции.">
+          <img src="../assets/img/warming-stripes-sm.webp" width="1000" height="707" loading="lazy" alt="Тъмен постер на България, в който всяка област е запълнена с климатични ивици от синьо към червено">
         </button>
         <div class="card-body">
-          <p class="kicker">Climate · A3 poster</p>
-          <h3>Bulgaria’s warming stripes</h3>
-          <p>Ed Hawkins’ warming stripes, drawn separately for every Bulgarian province from 36 station records, 1961–2025. The last decade is 1.8 °C warmer than 1961–1990, and 2024 is the warmest year in the series. Where a station record has gaps, the value is estimated from neighbouring stations — and the poster says so.</p>
-          <ul class="tags"><li>Python</li><li>Station data</li><li>Poster design</li></ul>
+          <p class="kicker">Климат · постер А3</p>
+          <h3>Затоплянето в България</h3>
+          <p>Климатичните ивици на Ед Хокинс, изчертани поотделно за всяка област в България по записите на 36 станции, 1961–2025&nbsp;г. Последното десетилетие е с 1,8&nbsp;°C по-топло от периода 1961–1990, а 2024&nbsp;г. е най-топлата в реда. Където в записите на някоя станция има пропуски, стойността е оценена по съседни станции – и постерът го казва.</p>
+          <ul class="tags"><li>Python</li><li>Данни от станции</li><li>Дизайн на постери</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="terrain">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="ridges" data-full="../assets/img/ridges-viewpoints.webp" data-caption="An inverted hydrological method for identifying mountain ridges, in five steps: inverted DEM, flow accumulation, ridgelines, viewpoint selection and visibility.">
-          <img src="../assets/img/ridges-viewpoints-sm.webp" width="1000" height="707" loading="lazy" alt="Five-panel poster showing an inverted elevation model, flow accumulation, ridgelines and viewsheds">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="ridges" data-full="../assets/img/ridges-viewpoints.webp" data-caption="Обърнат хидроложки метод за откриване на планински била в пет стъпки: обърнат ЦМР, натрупване на оттока, билни линии, избор на площадки и видимост.">
+          <img src="../assets/img/ridges-viewpoints-sm.webp" width="1000" height="707" loading="lazy" alt="Постер от пет панела с обърнат цифров модел на релефа, натрупване на оттока, билни линии и зони на видимост">
         </button>
         <div class="card-body">
-          <p class="kicker">Terrain · Research poster</p>
-          <h3>Ridges and viewpoints</h3>
-          <p>Multiply an elevation model by −1 and ridges become valleys, so flow accumulation traces ridgelines as if they were rivers. From those lines I pick prominent points and compute what each one sees within 10 km. The best viewpoint, Maragidik (1,814 m), sees 92 km²; the highest point (2,368 m) sees only 4.9 km². Prominence matters more than height.</p>
+          <p class="kicker">Релеф · научен постер</p>
+          <h3>Била и панорамни площадки</h3>
+          <p>Умножете цифров модел на релефа по −1 и билата се превръщат в долини, така че натрупването на оттока очертава билните линии, сякаш са реки. По тези линии избирам изпъкнали точки и изчислявам какво се вижда от всяка в радиус 10&nbsp;km. От най-добрата площадка, Марагидик (1814&nbsp;m), се виждат 92&nbsp;km²; от най-високата точка (2368&nbsp;m) – само 4,9&nbsp;km². Изпъкналостта е по-важна от височината.</p>
           <ul class="tags"><li>WhiteboxTools</li><li>gdal_viewshed</li><li>QGIS</li><li>Typst</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="nature">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="kyustendil" data-full="../assets/img/kyustendil-atlas.webp" data-caption="Kyustendil Species Atlas: Natura 2000 sites over the UTM 10 × 10 km grid, with each site’s overlap with the municipality.">
-          <img src="../assets/img/kyustendil-atlas-sm.webp" width="1000" height="832" loading="lazy" alt="Dark web interface with a map of Kyustendil municipality, protected sites and a 10 km grid">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="kyustendil" data-full="../assets/img/kyustendil-atlas.webp" data-caption="Атлас на видовете в община Кюстендил: зоните от Натура 2000 върху мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km и припокриването на всяка зона с общината.">
+          <img src="../assets/img/kyustendil-atlas-sm.webp" width="1000" height="832" loading="lazy" alt="Тъмен уеб интерфейс с карта на община Кюстендил, защитените зони и мрежа от 10&nbsp;km">
         </button>
         <div class="card-body">
-          <p class="kicker">Biodiversity · Interactive web atlas</p>
-          <h3>Kyustendil Species Atlas</h3>
-          <p>I read the distribution maps from the Red Data Book of Bulgaria and from the reference book on invasive plants onto the UTM 10 × 10 km grid, then joined them to the municipal boundary and the Natura 2000 sites. Each square shows how many taxa it holds; select one to list the species. Built with AI assistance.</p>
+          <p class="kicker">Биоразнообразие · интерактивен уеб атлас</p>
+          <h3>Атлас на видовете в община Кюстендил</h3>
+          <p>Пренесох картите на разпространение от Червената книга на България и от справочника за инвазивните растения върху мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km, след което ги свързах с границата на общината и зоните от Натура 2000. Всеки квадрат показва колко таксона има в него; изберете го, за да видите списъка с видовете. Създаден с помощта на ИИ.</p>
           <dl class="mini-facts">
-            <div><dt>185</dt><dd>Red Book taxa</dd></div>
-            <div><dt>23</dt><dd>invasive plants</dd></div>
-            <div><dt>7</dt><dd>Natura 2000 sites</dd></div>
+            <div><dt>185</dt><dd>таксона от Червената книга</dd></div>
+            <div><dt>23</dt><dd>инвазивни растения</dd></div>
+            <div><dt>7</dt><dd>зони от Натура 2000</dd></div>
           </dl>
-          <button class="more" type="button" data-lightbox data-group="kyustendil" data-full="../assets/img/kyustendil-species.webp" data-caption="Kyustendil Species Atlas: selecting a grid square lists its invasive plants with photos and field notes.">Second view: species list →</button>
+          <button class="more" type="button" data-lightbox data-group="kyustendil" data-full="../assets/img/kyustendil-species.webp" data-caption="Атлас на видовете в община Кюстендил: при избор на квадрат се показват инвазивните растения в него със снимки и теренни бележки.">Втори изглед: списък на видовете →</button>
         </div>
       </article>
 
       <article class="card reveal" data-cat="nature">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="gbi" data-full="../assets/img/sofia-green-blue.webp" data-caption="Potential elements of green and blue infrastructure in the functional urban area of Sofia, 2026. Data: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.">
-          <img src="../assets/img/sofia-green-blue-sm.webp" width="1000" height="707" loading="lazy" alt="Map of forest cores, grassland cores, corridors and water bodies around Sofia, with an inset of the city centre">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="gbi" data-full="../assets/img/sofia-green-blue.webp" data-caption="Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София, 2026&nbsp;г. Данни: Copernicus Land Monitoring Service, Urban Atlas 2021, Street Tree Layer 2021.">
+          <img src="../assets/img/sofia-green-blue-sm.webp" width="1000" height="707" loading="lazy" alt="Карта на горски ядра, тревни ядра, коридори и водни обекти около София, с врезка на центъра на града">
         </button>
         <div class="card-body">
-          <p class="kicker">Nature · Map</p>
-          <h3>Green and blue infrastructure of Sofia</h3>
-          <p>Potential elements of green and blue infrastructure across Sofia’s functional urban area: forest and grassland cores, green and blue corridors, and the “stepping stones” that let species move through the city. An inset shows tree cover in the centre at street scale.</p>
+          <p class="kicker">Природа · карта</p>
+          <h3>Зелена и синя инфраструктура на София</h3>
+          <p>Потенциални елементи на зелената и синята инфраструктура във функционалния градски район на София: горски и тревни ядра, зелени и сини коридори и „стъпалата“, по които видовете се придвижват през града. Врезка показва дървесната покривка в центъра в мащаба на улиците.</p>
           <ul class="tags"><li>QGIS</li><li>Urban Atlas 2021</li><li>Street Tree Layer</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="nature">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="burgas" data-full="../assets/img/burgas-forests.webp" data-caption="Where are the forests of Burgas province concentrated? Broadleaf, coniferous and mixed forest from CORINE Land Cover 2018.">
-          <img src="../assets/img/burgas-forests-sm.webp" width="1000" height="708" loading="lazy" alt="Map of Burgas province with forest cover in shades of green, densest in the south">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="burgas" data-full="../assets/img/burgas-forests.webp" data-caption="Къде са съсредоточени горите в област Бургас? Широколистни, иглолистни и смесени гори по CORINE Land Cover 2018.">
+          <img src="../assets/img/burgas-forests-sm.webp" width="1000" height="708" loading="lazy" alt="Карта на област Бургас с горската покривка в нюанси на зеленото, най-гъста на юг">
         </button>
         <div class="card-body">
-          <p class="kicker">Nature · Map</p>
-          <h3>Forests of Burgas province</h3>
-          <p>Broadleaf, coniferous and mixed forest from CORINE Land Cover 2018. Forest covers about 40 % of the province and is concentrated in Strandzha, in the south.</p>
+          <p class="kicker">Природа · карта</p>
+          <h3>Горите в област Бургас</h3>
+          <p>Широколистни, иглолистни и смесени гори по CORINE Land Cover 2018. Горите заемат около 40&nbsp;% от областта и са съсредоточени в Странджа, на юг.</p>
           <ul class="tags"><li>QGIS</li><li>CORINE 2018</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="people">
-        <button class="card-media media-top" type="button" data-label="Виж картата" data-lightbox data-group="elections" data-full="../assets/img/elections-2026.webp" data-caption="“One party, two different maps” — A0 research poster on the electoral geography of Bulgaria’s 2026 elections across 265 municipalities.">
-          <img src="../assets/img/elections-2026-sm.webp" width="991" height="1400" loading="lazy" alt="Research poster with two choropleth maps of Bulgaria by municipality, a turnout chart and a scatter plot">
+        <button class="card-media media-top" type="button" data-label="Виж картата" data-lightbox data-group="elections" data-full="../assets/img/elections-2026.webp" data-caption="„Една партия, две различни карти“ – научен постер А0 за електоралната география на изборите в България през 2026&nbsp;г. в 265 общини.">
+          <img src="../assets/img/elections-2026-sm.webp" width="991" height="1400" loading="lazy" alt="Научен постер с две картограми на България по общини, графика на избирателната активност и точкова диаграма">
         </button>
         <div class="card-body">
-          <p class="kicker">Electoral geography · A0 poster</p>
-          <h3>One party, two different maps</h3>
-          <p>A research poster from coursework in electoral geography. The question is methodological: does a party’s vote map in April predict where the presidential candidate it endorsed is strong in October? Across 265 municipalities the correlation is −0.16, and 0.02 once the municipalities led by one regional party are set aside — no relationship. The poster also states its limit: the data describe territories, not individual voters.</p>
-          <ul class="tags"><li>Spatial statistics</li><li>Typst</li><li>Claude Code</li></ul>
+          <p class="kicker">Електорална география · постер А0</p>
+          <h3>Една партия, две различни карти</h3>
+          <p>Научен постер от курсова работа по електорална география. Въпросът е методологичен: предсказва ли картата на гласовете за една партия през април къде е силен кандидатът за президент, когото тя подкрепи през октомври? В 265 общини корелацията е −0,16, а след изключване на общините, в които води една регионална партия – 0,02, т.е. връзка няма. Постерът посочва и ограничението си: данните описват територии, а не отделни избиратели.</p>
+          <ul class="tags"><li>Пространствена статистика</li><li>Typst</li><li>Claude Code</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="people">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="population" data-full="../assets/img/sofia-population.webp" data-caption="Where do people live in Sofia? Population density from address-level NSI data, smoothed with kernel density estimation.">
-          <img src="../assets/img/sofia-population-sm.webp" width="1000" height="708" loading="lazy" alt="Dark map of Sofia with population density glowing from purple to orange">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="population" data-full="../assets/img/sofia-population.webp" data-caption="Къде живеят хората в София? Гъстота на населението по данни на НСИ на ниво адрес, изгладена с оценка на плътността с ядро.">
+          <img src="../assets/img/sofia-population-sm.webp" width="1000" height="708" loading="lazy" alt="Тъмна карта на София, в която гъстотата на населението свети от лилаво към оранжево">
         </button>
         <div class="card-body">
-          <p class="kicker">People · Map</p>
-          <h3>Where do people live in Sofia?</h3>
-          <p>Population density from address-level data of the National Statistical Institute, smoothed with kernel density estimation — the same technique as a heatmap of species records.</p>
-          <ul class="tags"><li>QGIS</li><li>Kernel density</li><li>NSI data</li></ul>
+          <p class="kicker">Хора · карта</p>
+          <h3>Къде живеят хората в София?</h3>
+          <p>Гъстота на населението по данни на Националния статистически институт на ниво адрес, изгладена с оценка на плътността с ядро – същата техника като при топлинна карта на находища на видове.</p>
+          <ul class="tags"><li>QGIS</li><li>Плътност с ядро</li><li>Данни на НСИ</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="people">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="landuse" data-full="../assets/img/stolichna-landuse.webp" data-caption="Physical blocks in Stolichna municipality by land use, with a chart of each class’s share.">
-          <img src="../assets/img/stolichna-landuse-sm.webp" width="1000" height="563" loading="lazy" alt="Land-use map of Stolichna municipality next to a bar chart of land-use shares">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="landuse" data-full="../assets/img/stolichna-landuse.webp" data-caption="Физическите блокове в Столична община по начин на земеползване, с графика на дела на всеки клас.">
+          <img src="../assets/img/stolichna-landuse-sm.webp" width="1000" height="563" loading="lazy" alt="Карта на земеползването в Столична община до стълбовидна диаграма с дяловете на класовете">
         </button>
         <div class="card-body">
-          <p class="kicker">Territory · Map and chart</p>
-          <h3>Land use in Stolichna municipality</h3>
-          <p>The physical blocks of the municipality classified by land use, paired with a chart of each class’s share of the territory.</p>
-          <ul class="tags"><li>QGIS</li><li>Land parcel data</li></ul>
+          <p class="kicker">Територия · карта и графика</p>
+          <h3>Земеползване в Столична община</h3>
+          <p>Физическите блокове в общината, класифицирани по начин на земеползване, заедно с графика на дела на всеки клас от територията.</p>
+          <ul class="tags"><li>QGIS</li><li>Данни за поземлени имоти</li></ul>
         </div>
       </article>
 
       <article class="card reveal" data-cat="people terrain">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="staking" data-full="../assets/img/staking-plan.webp" data-caption="Staking plan for three parcels at 1:1000 in the Bulgarian coordinate system BGS2005, with the coordinate table of every point.">
-          <img src="../assets/img/staking-plan-sm.webp" width="1000" height="707" loading="lazy" alt="Black and white survey plan of three parcels with a table of point coordinates">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="staking" data-full="../assets/img/staking-plan.webp" data-caption="Трасировъчен план на три поземлени имота в мащаб 1:1000 в координатна система БГС2005, с таблица на координатите на всички точки.">
+          <img src="../assets/img/staking-plan-sm.webp" width="1000" height="707" loading="lazy" alt="Черно-бял геодезически план на три имота с таблица на координатите на точките">
         </button>
         <div class="card-body">
-          <p class="kicker">Geodesy · Plan</p>
-          <h3>Parcel staking plan</h3>
-          <p>Geodesy coursework: a staking plan for three parcels at 1:1000 in the Bulgarian coordinate system BGS2005, with the coordinates of every point tabulated.</p>
-          <ul class="tags"><li>Surveying</li><li>BGS2005</li><li>1:1000</li></ul>
+          <p class="kicker">Геодезия · план</p>
+          <h3>Трасировъчен план на поземлени имоти</h3>
+          <p>Курсова работа по геодезия: трасировъчен план на три поземлени имота в мащаб 1:1000 в българската координатна система БГС2005, с таблица на координатите на всички точки.</p>
+          <ul class="tags"><li>Геодезическо заснемане</li><li>БГС2005</li><li>1:1000</li></ul>
         </div>
       </article>
 
       <article class="card card-wide reveal" data-cat="climate">
-        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="climate" data-full="../assets/img/alisov-climate.webp" data-caption="Climate zones after Alisov’s classification, with climatograms of stations around the world (A1 poster).">
-          <img src="../assets/img/alisov-climate-sm.webp" width="1000" height="707" loading="lazy" alt="World map of climate zones in warm and cool bands, surrounded by small station climatograms">
+        <button class="card-media" type="button" data-label="Виж картата" data-lightbox data-group="climate" data-full="../assets/img/alisov-climate.webp" data-caption="Климатични пояси по класификацията на Алисов, с климатограми на станции от цял свят (постер А1).">
+          <img src="../assets/img/alisov-climate-sm.webp" width="1000" height="707" loading="lazy" alt="Карта на света с климатичните пояси в топли и студени ивици, заобиколена от малки климатограми на станции">
         </button>
         <div class="card-body">
-          <p class="kicker">Climate · A1 poster and maps</p>
-          <h3>Climate zones and world temperature</h3>
-          <p>A teaching poster of Alisov’s climate zones that ties each zone to climatograms of real stations — temperature and precipitation by month. Its companion sheet maps mean January and July air temperature from WorldClim 2.1, 1970–2000.</p>
-          <button class="more" type="button" data-lightbox data-group="climate" data-full="../assets/img/world-temperature.webp" data-caption="Mean monthly air temperature in January and July, 1970–2000. Source: WorldClim 2.1.">Second sheet: January and July →</button>
+          <p class="kicker">Климат · постер А1 и карти</p>
+          <h3>Климатични пояси и температура на света</h3>
+          <p>Учебен постер на климатичните пояси по Алисов, който свързва всеки пояс с климатограми на реални станции – температура и валежи по месеци. Придружаващият го лист показва средната температура на въздуха през януари и юли по WorldClim 2.1, 1970–2000&nbsp;г.</p>
+          <button class="more" type="button" data-lightbox data-group="climate" data-full="../assets/img/world-temperature.webp" data-caption="Средна месечна температура на въздуха през януари и юли, 1970–2000&nbsp;г. Източник: WorldClim 2.1.">Втори лист: януари и юли →</button>
         </div>
       </article>
 
@@ -352,27 +351,27 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 
     <!-- Earlier work -->
     <div class="earlier reveal">
-      <h3 class="sub-head">Earlier maps <span class="mono">2025 – early 2026</span></h3>
+      <h3 class="sub-head">По-ранни карти <span class="mono">2025 – началото на 2026</span></h3>
       <div class="strip">
-        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gym-sofia.webp" data-caption="Where are gyms needed in Sofia? A weighted index on a hexagonal grid: population density (0.7) and distance to the nearest gym (0.3). Data: Meta population, OpenStreetMap.">
-          <img src="../assets/img/gym-sofia-sm.webp" width="1000" height="1000" loading="lazy" alt="Hexagonal grid map of Sofia in purple and orange showing the need for gyms">
-          <span><b>Fitness accessibility index</b>Sofia · hex grid, weighted index</span>
+        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gym-sofia.webp" data-caption="Къде в София са нужни фитнес зали? Претеглен индекс върху шестоъгълна мрежа: гъстота на населението (0,7) и разстояние до най-близката зала (0,3). Данни: Meta population, OpenStreetMap.">
+          <img src="../assets/img/gym-sofia-sm.webp" width="1000" height="1000" loading="lazy" alt="Карта на София с шестоъгълна мрежа в лилаво и оранжево, показваща нуждата от фитнес зали">
+          <span><b>Индекс на достъпност до фитнес зали</b>София · шестоъгълна мрежа, претеглен индекс</span>
         </button>
-        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gdp-europe.webp" data-caption="GDP per capita across Europe, from Eurostat data.">
-          <img src="../assets/img/gdp-europe-sm.webp" width="1000" height="701" loading="lazy" alt="Choropleth map of Europe by GDP per capita">
-          <span><b>GDP per capita in Europe</b>Eurostat · choropleth</span>
+        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gdp-europe.webp" data-caption="БВП на човек от населението в Европа по данни на Евростат.">
+          <img src="../assets/img/gdp-europe-sm.webp" width="1000" height="701" loading="lazy" alt="Картограма на Европа по БВП на човек от населението">
+          <span><b>БВП на човек от населението в Европа</b>Евростат · картограма</span>
         </button>
-        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gresham-rentals.webp" data-caption="Rental unit density against age demographics in Gresham, Oregon.">
-          <img src="../assets/img/gresham-rentals-sm.webp" width="1000" height="456" loading="lazy" alt="Map of Gresham, Oregon showing rental unit density">
-          <span><b>Rental market, Gresham, Oregon</b>Demographics · density mapping</span>
+        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/gresham-rentals.webp" data-caption="Гъстота на жилищата под наем спрямо възрастовата структура в Грешам, Орегон.">
+          <img src="../assets/img/gresham-rentals-sm.webp" width="1000" height="456" loading="lazy" alt="Карта на Грешам, Орегон, с гъстотата на жилищата под наем">
+          <span><b>Пазар на наеми, Грешам, Орегон</b>Демография · картографиране на гъстота</span>
         </button>
-        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/nyc-pedestrians.webp" data-caption="High-traffic pedestrian corridors in New York City, from NYC Open Data.">
-          <img src="../assets/img/nyc-pedestrians-sm.webp" width="990" height="1400" loading="lazy" alt="Vertical map of Manhattan with pedestrian flow highlighted">
-          <span><b>NYC pedestrian flows</b>NYC Open Data · density</span>
+        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/nyc-pedestrians.webp" data-caption="Натоварени пешеходни коридори в Ню Йорк по данни на NYC Open Data.">
+          <img src="../assets/img/nyc-pedestrians-sm.webp" width="990" height="1400" loading="lazy" alt="Вертикална карта на Манхатън с открояване на пешеходните потоци">
+          <span><b>Пешеходни потоци в Ню Йорк</b>NYC Open Data · гъстота</span>
         </button>
-        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/netherlands-ndvi.webp" data-caption="NDVI from Sentinel-2 imagery over the Netherlands.">
-          <img src="../assets/img/netherlands-ndvi-sm.webp" width="990" height="1400" loading="lazy" alt="Satellite-derived vegetation index map of the Netherlands">
-          <span><b>NDVI, the Netherlands</b>Sentinel-2 · raster analysis</span>
+        <button class="tile" type="button" data-lightbox data-group="earlier" data-full="../assets/img/netherlands-ndvi.webp" data-caption="NDVI по изображения от Sentinel-2 за Нидерландия.">
+          <img src="../assets/img/netherlands-ndvi-sm.webp" width="990" height="1400" loading="lazy" alt="Карта на вегетационен индекс на Нидерландия по спътникови данни">
+          <span><b>NDVI, Нидерландия</b>Sentinel-2 · растерен анализ</span>
         </button>
       </div>
     </div>
@@ -397,55 +396,55 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
   </svg>
   <div class="wrap club-wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">02</span> Community</p>
-      <h2>GIS Club SU <span class="cyr">ГИС клуб СУ</span></h2>
-      <p class="section-lead">In October 2026 I founded a student club at Sofia University for everyone who likes maps, data and satellites. I serve as its chair.</p>
+      <p class="eyebrow"><span class="mono">02</span> Общност</p>
+      <h2>ГИС клуб СУ <span class="cyr">GIS Club SU</span></h2>
+      <p class="section-lead">През октомври 2026&nbsp;г. основах студентски клуб в Софийския университет за всички, които обичат карти, данни и спътници. Аз съм негов председател.</p>
     </header>
 
     <div class="club-grid">
       <div class="club-story reveal">
-        <p>The founding general assembly on 9 October 2026 adopted the club’s statute and elected me chair. Fifteen students signed the founding protocol. The statute sets out how the club runs — a general assembly, a managing board and a chair elected each academic year — so that every next generation can pick up where the last one stopped.</p>
-        <p>Membership is free and open to students, lecturers, PhD students and anyone interested in GIS and remote sensing. ArcGIS or QGIS, everyone is welcome.</p>
+        <p>Учредителното общо събрание на 9 октомври 2026&nbsp;г. прие устава на клуба и ме избра за председател. Петнадесет студенти подписаха учредителния протокол. Уставът урежда как работи клубът – общо събрание, управителен съвет и председател, избиран всяка академична година, – така че всяко следващо поколение да продължи оттам, докъдето е стигнало предишното.</p>
+        <p>Членството е безплатно и е открито за студенти, преподаватели, докторанти и всички, които се интересуват от ГИС и дистанционни изследвания. ArcGIS или QGIS – всеки е добре дошъл.</p>
 
-        <h3 class="club-sub">What the club is for</h3>
+        <h3 class="club-sub">За какво е клубът</h3>
         <ul class="club-goals">
-          <li><b>Make geospatial technology visible</b> to students and to the public.</li>
-          <li><b>Build an informal community</b> where students and lecturers share knowledge and ideas.</li>
-          <li><b>Support members’ growth</b>, academic and professional.</li>
-          <li><b>Connect the university with industry</b> in geospatial technology.</li>
+          <li><b>Да направи геопространствените технологии видими</b> за студентите и за обществото.</li>
+          <li><b>Да изгради неформална общност</b>, в която студенти и преподаватели споделят знания и идеи.</li>
+          <li><b>Да подкрепя развитието на членовете си</b> – академично и професионално.</li>
+          <li><b>Да свързва университета с бизнеса</b> в областта на геопространствените технологии.</li>
         </ul>
 
-        <h3 class="club-sub">How</h3>
-        <p class="club-how">Public lectures, seminars and workshops · guest speakers from academia and industry · hackathons and map challenges · field trips · partnerships with departments and organisations.</p>
+        <h3 class="club-sub">Как</h3>
+        <p class="club-how">Публични лекции, семинари и работилници · гост-лектори от академичните среди и бизнеса · хакатони и картографски предизвикателства · теренни излети · партньорства с катедри и организации.</p>
 
-        <p class="club-note">I also designed the club’s visual identity: a Swiss-style system in navy and stepped blues, built around contour bands and a point-cloud image of the university’s Rectorate.</p>
+        <p class="club-note">Създадох и визуалната идентичност на клуба: система в швейцарски стил в тъмносиньо и степенувани сини тонове, изградена около хипсометрични пояси и изображение на Ректората на университета като облак от точки.</p>
       </div>
 
       <aside class="club-side reveal">
         <ol class="timeline">
           <li>
-            <p class="when">9 October 2026</p>
-            <p class="what">Founding general assembly</p>
-            <p class="where">Statute adopted · chair elected</p>
+            <p class="when">9 октомври 2026</p>
+            <p class="what">Учредително общо събрание</p>
+            <p class="where">Приет устав · избран председател</p>
           </li>
           <li>
-            <p class="when">11 November 2026</p>
-            <p class="what">First seminar: Introduction to GIS</p>
-            <p class="where">Hands-on with QGIS, using a worksheet I prepared · Room 287, north wing of the Rectorate</p>
+            <p class="when">11 ноември 2026</p>
+            <p class="what">Първи семинар: Въведение в ГИС</p>
+            <p class="where">Практика с QGIS по работен лист, който подготвих · зала 287, северно крило на Ректората</p>
           </li>
           <li class="next">
-            <p class="when">Next</p>
-            <p class="what">Lectures, workshops, hackathons</p>
-            <p class="where">Map challenges, field trips and meetings with specialists from the university and industry</p>
+            <p class="when">Предстои</p>
+            <p class="what">Лекции, работилници, хакатони</p>
+            <p class="where">Картографски предизвикателства, теренни излети и срещи със специалисти от университета и бизнеса</p>
           </li>
         </ol>
         <figure class="club-post">
-          <button class="shot" type="button" data-lightbox data-group="club" data-full="../assets/img/club-seminar.webp" data-caption="Announcement for the first seminar of GIS Club SU, 11 November 2026: “Introduction to GIS — we’ll work with real GIS software (QGIS)”.">
-            <img src="../assets/img/club-seminar-sm.webp" width="1000" height="1000" loading="lazy" alt="Navy announcement poster in Bulgarian for the club’s first seminar, with contour lines and the club emblem">
+          <button class="shot" type="button" data-lightbox data-group="club" data-full="../assets/img/club-seminar.webp" data-caption="Обява за първия семинар на ГИС клуб СУ, 11 ноември 2026&nbsp;г.: „Въведение в ГИС – ще работим с реален ГИС софтуер (QGIS)“.">
+            <img src="../assets/img/club-seminar-sm.webp" width="1000" height="1000" loading="lazy" alt="Тъмносин плакат за първия семинар на клуба с изохипси и емблемата на клуба">
           </button>
           <figcaption>
-            <img class="emblem" src="../assets/img/club-emblem-sm.webp" width="574" height="574" loading="lazy" alt="Club emblem: the Rectorate of Sofia University rendered as a coloured point cloud">
-            <span>Announcement for the first seminar, in the club’s visual identity</span>
+            <img class="emblem" src="../assets/img/club-emblem-sm.webp" width="574" height="574" loading="lazy" alt="Емблема на клуба: Ректоратът на Софийския университет, изобразен като цветен облак от точки">
+            <span>Обява за първия семинар във визуалната идентичност на клуба</span>
           </figcaption>
         </figure>
       </aside>
@@ -457,60 +456,60 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <section class="section tutoring" id="tutoring">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">03</span> Teaching</p>
-      <h2>Private GIS tutoring</h2>
-      <p class="section-lead">One-to-one lessons in QGIS for students, researchers and professionals who need maps for their own work. We start from your question and your data, not from a fixed syllabus.</p>
+      <p class="eyebrow"><span class="mono">03</span> Обучение</p>
+      <h2>Частни уроци по ГИС</h2>
+      <p class="section-lead">Индивидуални уроци по QGIS за студенти, изследователи и специалисти, на които им трябват карти за собствената им работа. Започваме от вашия въпрос и вашите данни, а не от готова програма.</p>
     </header>
 
     <div class="tutor-grid">
       <div class="reveal">
-        <h3 class="sub-head">How it works</h3>
+        <h3 class="sub-head">Как протича</h3>
         <ol class="steps">
-          <li><p><b>We start with your question.</b> Before the first lesson I ask what you study or work on, what data you have, and which map you want to have a month from now.</p></li>
-          <li><p><b>You finish a map in the first lesson.</b> We build it step by step in QGIS, on a place that matters to you.</p></li>
-          <li><p><b>Then we move to your own data.</b> Each lesson ends with something you can use: a layer, a figure for a paper, or a worksheet to repeat the steps on your own.</p></li>
+          <li><p><b>Започваме с вашия въпрос.</b> Преди първия урок ви питам какво учите или с какво се занимавате, какви данни имате и каква карта искате да имате след месец.</p></li>
+          <li><p><b>Завършвате карта още на първия урок.</b> Изграждаме я стъпка по стъпка в QGIS, за място, което е важно за вас.</p></li>
+          <li><p><b>После минаваме към вашите данни.</b> Всеки урок завършва с нещо полезно: слой, фигура за статия или работен лист, по който да повторите стъпките сами.</p></li>
         </ol>
       </div>
 
       <aside class="tutor-card reveal">
-        <h3 class="sub-head">Practical details</h3>
-        <p>Lessons are one-to-one and online, in Bulgarian or English. QGIS is free, so a laptop is all you need. Write to me with what you want to map and we will plan from there.</p>
-        <a class="btn btn-primary" href="mailto:bbaidanoff2@gmail.com?subject=GIS%20lessons">Ask about lessons</a>
+        <h3 class="sub-head">Практически подробности</h3>
+        <p>Уроците са индивидуални и онлайн, на български или английски. QGIS е безплатен, така че ви трябва само лаптоп. Пишете ми какво искате да картографирате и ще планираме оттам.</p>
+        <a class="btn btn-primary" href="mailto:bbaidanoff2@gmail.com?subject=%D0%A3%D1%80%D0%BE%D1%86%D0%B8%20%D0%BF%D0%BE%20%D0%93%D0%98%D0%A1">Попитайте за уроци</a>
       </aside>
     </div>
 
     <div class="topics-block reveal">
-      <h3 class="sub-head">What we can cover</h3>
+      <h3 class="sub-head">Какво можем да обхванем</h3>
       <div class="topics">
         <article class="topic">
-          <h4>A first map in QGIS</h4>
-          <p>Layers, coordinate systems and filters, through to a finished layout with a legend and a scale bar.</p>
-          <p class="topic-tools mono">Layers · Identify · Print layout</p>
+          <h4>Първа карта в QGIS</h4>
+          <p>Слоеве, координатни системи и филтри – до завършено оформление с легенда и линеен мащаб.</p>
+          <p class="topic-tools mono">Слоеве · Идентифициране · Оформление за печат</p>
         </article>
         <article class="topic">
-          <h4>Points and hotspots</h4>
-          <p>Where records cluster — and why a heatmap often shows where people go, not where something is most common.</p>
-          <p class="topic-tools mono">Heatmap (kernel density)</p>
+          <h4>Точки и горещи точки</h4>
+          <p>Къде се струпват наблюденията – и защо топлинната карта често показва къде ходят хората, а не къде нещо е най-често срещано.</p>
+          <p class="topic-tools mono">Топлинна карта (плътност с ядро)</p>
         </article>
         <article class="topic">
-          <h4>Grids and counts</h4>
-          <p>Records summarised by grid squares, such as the UTM 10 × 10 km grid used in distribution atlases.</p>
+          <h4>Мрежи и преброяване</h4>
+          <p>Наблюдения, обобщени по квадрати от мрежа, като мрежата UTM 10&nbsp;×&nbsp;10&nbsp;km, използвана в атласите на разпространение.</p>
           <p class="topic-tools mono">Create Grid · Count Points in Polygon</p>
         </article>
         <article class="topic">
-          <h4>Your own layers</h4>
-          <p>Polygons drawn from satellite imagery and fieldwork, with their types and areas in the attribute table.</p>
-          <p class="topic-tools mono">Digitising · Field Calculator</p>
+          <h4>Ваши собствени слоеве</h4>
+          <p>Полигони, очертани по спътникови изображения и теренна работа, с типа и площта им в атрибутната таблица.</p>
+          <p class="topic-tools mono">Дигитализиране · Field Calculator</p>
         </article>
         <article class="topic">
-          <h4>Rasters and satellite data</h4>
-          <p>Elevation models and Sentinel-2 images: vegetation indices, change over time, and what the pixels can support.</p>
+          <h4>Растери и спътникови данни</h4>
+          <p>Цифрови модели на релефа и изображения от Sentinel-2: вегетационни индекси, промени във времето и какво всъщност могат да покажат пикселите.</p>
           <p class="topic-tools mono">Raster Calculator · NDVI</p>
         </article>
         <article class="topic">
-          <h4>AI in your workflow, used openly</h4>
-          <p>Where AI saves time, how to check what it returns, and how to state its role next to your data sources.</p>
-          <p class="topic-tools mono">Checking results · Disclosure</p>
+          <h4>ИИ в работата ви, използван открито</h4>
+          <p>Къде ИИ пести време, как да проверявате какво връща и как да посочвате ролята му до източниците на данни.</p>
+          <p class="topic-tools mono">Проверка на резултатите · Деклариране</p>
         </article>
       </div>
     </div>
@@ -521,58 +520,58 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <section class="section" id="code">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">04</span> Code and web maps</p>
-      <h2>Open-source projects</h2>
-      <p class="section-lead">Reproducible analyses and interactive maps on <a href="https://github.com/bbaid">GitHub</a>.</p>
+      <p class="eyebrow"><span class="mono">04</span> Код и уеб карти</p>
+      <h2>Проекти с отворен код</h2>
+      <p class="section-lead">Възпроизводими анализи и интерактивни карти в <a href="https://github.com/bbaid">GitHub</a>.</p>
     </header>
 
     <div class="repos">
       <article class="repo reveal">
         <p class="repo-name mono">services-access-sofia</p>
-        <h3>Sofia — access to basic services</h3>
-        <p>How well Sofia’s 310 neighbourhoods are served by hospitals, schools, kindergartens, police, supermarkets and pharmacies. OpenStreetMap facilities meet the Census 2021 population grid on a pedestrian network: nearest-service walking distance, 10-minute coverage, a composite access index and LISA hotspots.</p>
+        <h3>София – достъп до основни услуги</h3>
+        <p>Колко добре 310-те квартала на София са обслужени от болници, училища, детски градини, полиция, супермаркети и аптеки. Обектите от OpenStreetMap се срещат с мрежата на населението от преброяване 2021 върху пешеходна мрежа: пешеходно разстояние до най-близката услуга, покритие в рамките на 10 минути, съставен индекс на достъпност и LISA клъстери.</p>
         <ul class="tags"><li>Python</li><li>OSMnx</li><li>GeoPandas</li><li>PySAL</li><li>Mapbox GL JS</li></ul>
-        <p class="links"><a href="https://bbaid.github.io/services-access-sofia/">Interactive map</a><a href="https://github.com/bbaid/services-access-sofia">Code</a></p>
+        <p class="links"><a href="https://bbaid.github.io/services-access-sofia/">Интерактивна карта</a><a href="https://github.com/bbaid/services-access-sofia">Код</a></p>
       </article>
 
       <article class="repo reveal">
         <p class="repo-name mono">ancient-trees</p>
-        <h3>Venerable trees of Bulgaria</h3>
-        <p>A bilingual interactive map of 1,372 protected centuries-old trees from the national register, grouped by species, with age, height and girth for each tree. A small Python script converts the register spreadsheet to GeoJSON.</p>
+        <h3>Вековните дървета на България</h3>
+        <p>Двуезична интерактивна карта на 1372 защитени вековни дървета от националния регистър, групирани по вид, с възраст, височина и обиколка на всяко дърво. Малък Python скрипт превръща таблицата на регистъра в GeoJSON.</p>
         <ul class="tags"><li>Mapbox GL JS</li><li>Python</li><li>GeoJSON</li><li>GitHub Actions</li></ul>
-        <p class="links"><a href="https://bbaid.github.io/ancient-trees/">Interactive map</a><a href="https://github.com/bbaid/ancient-trees">Code</a></p>
+        <p class="links"><a href="https://bbaid.github.io/ancient-trees/">Интерактивна карта</a><a href="https://github.com/bbaid/ancient-trees">Код</a></p>
       </article>
 
       <article class="repo reveal">
         <p class="repo-name mono">china-niche-industries</p>
-        <h3>China’s niche industry towns</h3>
-        <p>A map of 61 Chinese towns and counties that make a large share of one product — buttons in Qiaotou, oil paintings in Dafen. Every coordinate is checked against OpenStreetMap, and the README is frank about which market-share claims are only “reported”.</p>
+        <h3>Специализираните индустриални градове в Китай</h3>
+        <p>Карта на 61 китайски града и окръга, които произвеждат голям дял от един продукт – копчета в Цяотоу, маслени картини в Дафън. Всяка координата е проверена спрямо OpenStreetMap, а README файлът открито казва кои твърдения за пазарен дял са само „съобщени“.</p>
         <ul class="tags"><li>Leaflet</li><li>Python</li><li>Nominatim</li><li>GitHub Actions</li></ul>
-        <p class="links"><a href="https://bbaid.github.io/china-niche-industries/">Interactive map</a><a href="https://github.com/bbaid/china-niche-industries">Code</a></p>
+        <p class="links"><a href="https://bbaid.github.io/china-niche-industries/">Интерактивна карта</a><a href="https://github.com/bbaid/china-niche-industries">Код</a></p>
       </article>
 
       <article class="repo reveal">
         <p class="repo-name mono">world-color-average</p>
-        <h3>The average colour of every country</h3>
-        <p>The mean Sentinel-2 satellite colour of each country and of Bulgaria’s regions, provinces and municipalities, written back into the shapefile. A pure-Python re-creation of Erin Davis’s project: download, mask to the border, average with a latitude weight — no GDAL required.</p>
+        <h3>Средният цвят на всяка държава</h3>
+        <p>Средният цвят по спътникови изображения от Sentinel-2 за всяка държава и за районите, областите и общините в България, записан обратно в shapefile файла. Пресъздаване на проекта на Ерин Дейвис изцяло на Python: изтегляне, маскиране по границата, осредняване с тегло по географска ширина – без нужда от GDAL.</p>
         <ul class="tags"><li>Python</li><li>Sentinel-2 cloudless</li><li>Pillow</li><li>WMS</li></ul>
-        <p class="links"><a href="https://github.com/bbaid/world-color-average">Code</a></p>
+        <p class="links"><a href="https://github.com/bbaid/world-color-average">Код</a></p>
       </article>
 
       <article class="repo reveal">
         <p class="repo-name mono">dogs-sofia</p>
-        <h3>Dogs of Sofia</h3>
-        <p>A pipeline that downloads and cleans Sofia’s dog registry and the Call Sofia complaint signals, aggregates them by district and publishes a web map with district shading and complaint points.</p>
-        <ul class="tags"><li>Python</li><li>GeoPandas</li><li>Web scraping</li><li>Mapbox GL JS</li></ul>
-        <p class="links"><a href="https://github.com/bbaid/dogs-sofia">Code</a></p>
+        <h3>Кучетата на София</h3>
+        <p>Поточна обработка, която изтегля и почиства регистъра на кучетата в София и сигналите за оплаквания в Call Sofia, обобщава ги по райони и публикува уеб карта с оцветени райони и точки на сигналите.</p>
+        <ul class="tags"><li>Python</li><li>GeoPandas</li><li>Уеб скрейпинг</li><li>Mapbox GL JS</li></ul>
+        <p class="links"><a href="https://github.com/bbaid/dogs-sofia">Код</a></p>
       </article>
 
       <article class="repo reveal">
-        <p class="repo-name mono">NeroSense <span class="badge">team project</span></p>
-        <h3>NeroSense — adaptive water intelligence</h3>
-        <p>Our team’s entry for the 11th CASSINI Hackathon. Satellite indicators of chlorophyll, turbidity and temperature are turned into priority maps that tell an autonomous surface robot where to sample — tested on phytoplankton blooms in the Iskar reservoir.</p>
+        <p class="repo-name mono">NeroSense <span class="badge">отборен проект</span></p>
+        <h3>NeroSense – адаптивно наблюдение на водите</h3>
+        <p>Участието на нашия отбор в 11-ия хакатон CASSINI. Спътникови показатели за хлорофил, мътност и температура се превръщат в карти на приоритетите, които показват на автономен надводен робот къде да взема проби – изпробвано върху цъфтежи на фитопланктон в язовир „Искър“.</p>
         <ul class="tags"><li>Sentinel-2/3</li><li>Google Earth Engine</li><li>FastAPI</li><li>PostgreSQL</li></ul>
-        <p class="links"><a href="https://github.com/nikolayVv/NeroSense">Code</a></p>
+        <p class="links"><a href="https://github.com/nikolayVv/NeroSense">Код</a></p>
       </article>
     </div>
   </div>
@@ -582,59 +581,59 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <section class="section section-alt" id="about">
   <div class="wrap">
     <header class="section-head">
-      <p class="eyebrow"><span class="mono">05</span> About</p>
-      <h2>Background and toolbox</h2>
+      <p class="eyebrow"><span class="mono">05</span> За мен</p>
+      <h2>Образование и инструменти</h2>
     </header>
 
     <div class="about-grid">
       <div class="about-bio reveal">
-        <p class="lead-para">I study how places work and how to show it clearly. Most of my projects start with a question — where is something missing, what changed, what can be seen from here — and end as a map someone else can read without me in the room.</p>
-        <p>I work across the whole chain: finding and cleaning open data, analysis in Python and QGIS, and the layout of the final sheet. I’m most interested in GIS and remote sensing for research, and in teaching them — which is why I started GIS Club SU and prepare introductory QGIS lessons.</p>
+        <p class="lead-para">Изучавам как функционират местата и как да го покажа ясно. Повечето ми проекти започват с въпрос – къде липсва нещо, какво се е променило, какво се вижда оттук – и завършват като карта, която някой друг може да прочете и без мен.</p>
+        <p>Работя по цялата верига: намиране и почистване на отворени данни, анализ в Python и QGIS и оформление на крайния лист. Най-много ме интересуват ГИС и дистанционните изследвания за научни цели, както и преподаването им – затова основах ГИС клуб СУ и подготвям въвеждащи уроци по QGIS.</p>
 
-        <h3 class="sub-head">Education and experience</h3>
+        <h3 class="sub-head">Образование и опит</h3>
         <ul class="cv">
           <li>
-            <span class="cv-when mono">2023 – now</span>
-            <span><b>Sofia University “St. Kliment Ohridski”</b> — BSc Geospatial Systems and Technologies, Faculty of Geology and Geography. Grade average 5.95 / 6.00. Three Erasmus+ exchanges.</span>
+            <span class="cv-when mono">2023 – сега</span>
+            <span><b>Софийски университет „Св. Климент Охридски“</b> – бакалавър, „Геопространствени системи и технологии“, Геолого-географски факултет. Среден успех 5,95 / 6,00. Три обмена по „Еразъм+“.</span>
           </li>
           <li>
-            <span class="cv-when mono">2026 – now</span>
-            <span><b>GIS Club SU</b> — founder and chair.</span>
+            <span class="cv-when mono">2026 – сега</span>
+            <span><b>ГИС клуб СУ</b> – основател и председател.</span>
           </li>
           <li>
             <span class="cv-when mono">2026</span>
-            <span><b>CASSINI Hackathon</b>, 11th edition — team NeroSense.</span>
+            <span><b>Хакатон CASSINI</b>, 11-о издание – отбор NeroSense.</span>
           </li>
           <li>
             <span class="cv-when mono">2020 – 2023</span>
-            <span><b>Uni4kids</b> — intern, science communicator.</span>
+            <span><b>Uni4kids</b> – стажант, комуникатор на науката.</span>
           </li>
           <li>
             <span class="cv-when mono">2018 – 2023</span>
-            <span><b>National High School of Mathematics and Natural Sciences</b> “Acad. Lyubomir Chakalov”, Sofia.</span>
+            <span><b>Национална природо-математическа гимназия</b> „Акад. Любомир Чакалов“, София.</span>
           </li>
         </ul>
-        <p class="langs"><b>Languages:</b> Bulgarian (native) · English (C2 — Cambridge English: Advanced, 2025)</p>
+        <p class="langs"><b>Езици:</b> български (роден) · английски (C2 – Cambridge English: Advanced, 2025)</p>
       </div>
 
       <div class="about-side reveal">
         <div class="toolbox">
-          <h3 class="sub-head">Toolbox</h3>
+          <h3 class="sub-head">Инструменти</h3>
           <dl>
-            <div><dt>GIS</dt><dd>QGIS · ArcGIS Pro · ArcGIS Online · StoryMaps</dd></div>
-            <div><dt>Code and data</dt><dd>Python (GeoPandas, Rasterio, Pandas, Matplotlib, OSMnx) · GDAL · WhiteboxTools · SQL and PostGIS</dd></div>
-            <div><dt>Remote sensing</dt><dd>Sentinel-2 · CORINE and Copernicus layers · DEM analysis, viewsheds, NDVI</dd></div>
-            <div><dt>Web maps</dt><dd>Mapbox GL JS · Leaflet · GitHub Pages and Actions</dd></div>
-            <div><dt>Layout</dt><dd>QGIS layouts · Typst · Affinity</dd></div>
+            <div><dt>ГИС</dt><dd>QGIS · ArcGIS Pro · ArcGIS Online · StoryMaps</dd></div>
+            <div><dt>Код и данни</dt><dd>Python (GeoPandas, Rasterio, Pandas, Matplotlib, OSMnx) · GDAL · WhiteboxTools · SQL и PostGIS</dd></div>
+            <div><dt>Дистанционни изследвания</dt><dd>Sentinel-2 · CORINE и слоеве на Copernicus · анализ на ЦМР, видимост, NDVI</dd></div>
+            <div><dt>Уеб карти</dt><dd>Mapbox GL JS · Leaflet · GitHub Pages и Actions</dd></div>
+            <div><dt>Оформление</dt><dd>оформления в QGIS · Typst · Affinity</dd></div>
           </dl>
         </div>
 
         <div class="ai-note">
-          <h3 class="sub-head">How I work with AI</h3>
+          <h3 class="sub-head">Как работя с ИИ</h3>
           <ol>
-            <li><b>I set the question and the method.</b> AI carries out steps; it doesn’t decide what I study.</li>
-            <li><b>I check every result</b> against the source data before it reaches the map.</li>
-            <li><b>I say openly what AI did</b> — on the map itself, next to the data sources.</li>
+            <li><b>Аз задавам въпроса и метода.</b> ИИ изпълнява стъпки; той не решава какво изследвам.</li>
+            <li><b>Проверявам всеки резултат</b> спрямо изходните данни, преди да стигне до картата.</li>
+            <li><b>Казвам открито какво е направил ИИ</b> – върху самата карта, до източниците на данни.</li>
           </ol>
         </div>
       </div>
@@ -645,15 +644,15 @@ try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') 
 <!-- ───────────── Contact ───────────── -->
 <section class="contact" id="contact">
   <div class="wrap contact-wrap">
-    <p class="eyebrow"><span class="mono">06</span> Contact</p>
-    <h2>Have a question a map could answer?</h2>
-    <p class="section-lead">I’m open to internships, research collaborations and guest talks for GIS Club SU.</p>
+    <p class="eyebrow"><span class="mono">06</span> Контакт</p>
+    <h2>Имате въпрос, на който карта може да отговори?</h2>
+    <p class="section-lead">Отворен съм за стажове, научно сътрудничество и гостуващи лекции за ГИС клуб СУ.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:bbaidanoff2@gmail.com">bbaidanoff2@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/bbaidanoff/">LinkedIn</a>
       <a class="btn" href="https://github.com/bbaid">GitHub</a>
-      <a class="btn btn-ghost" href="cv/">CV</a>
-      <a class="btn btn-ghost" href="../CV_Bojan_GIS_BG.pdf">CV (PDF)</a>
+      <a class="btn btn-ghost" href="cv/">Автобиография</a>
+      <a class="btn btn-ghost" href="../CV_Bojan_GIS_BG.pdf">Автобиография (PDF)</a>
     </div>
   </div>
 </section>
