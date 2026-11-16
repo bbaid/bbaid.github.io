@@ -27,17 +27,17 @@ After editing, run:  python3 build.py   (it reports how much is still in English
 - `share-description`: Портфолио на Б. Байданов. Карти, атласи и уеб продукти. Сайт на ГИС клуба в СУ.
 - `name`: Боян Байданов
 - `footer`: © 2026 Bojan Baidanoff · Боян Байданов
-- `coordinates`: 42.6977° с. д., 23.3219° и. ш.
+- `coordinates`: 42.6977° с. ш., 23.3219° и. д.
 
 # Interface {#ui}
 
 <!-- Short labels for buttons and screen readers. -->
 
 - `skip`: Пропусни
-- `home`: Боян Байданов, върни се от начало
+- `home`: Боян Байданов, към началото
 - `sections`: Секции
 - `language`: Език
-- `theme`: Смени темама
+- `theme`: Смени темата
 - `view-map`: Виж картата
 - `filter`: Филтрирай проектите по тема
 - `viewer`: Картен преглед
