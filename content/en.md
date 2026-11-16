@@ -82,8 +82,6 @@ Recent projects from my studies and my own time. Select any map to see it full s
 
 A 36-sheet A3 atlas rebuilt for the *Common Spatial Development Strategy of the V4+2 Countries* — Czechia, Hungary, Poland, Slovakia, Bulgaria and Romania. It keeps the themes of the 2014 original, but every map is redrawn from the latest open data with one legend system, one typeface and one palette, so sheets can be compared at a glance.
 
-The barriers chapter adds a conflict analysis of planned transport infrastructure against Natura 2000 sites and high mountains.
-
 - `kicker`: Atlas · October 2026
 - `method`: **How:** one Python script per sheet on a shared style library (layout, legend, basemap, labels, projections); output as vector PDF and 300 dpi PNG.
 - `tags`: Python, GeoPandas, Rasterio, Matplotlib, OpenStreetMap, QGIS
