@@ -49,11 +49,11 @@ After editing, run:  python3 build.py
 
 # Bojan Baidanoff {#hero}
 
-I make maps that answer a question — atlases, research posters and web maps built from open spatial data.
+I make maps that answer questions: atlases, research posters and web maps built from open spatial data.
 
 Third-year student of Geospatial Systems and Technologies at Sofia University “St. Kliment Ohridski”, and founder of [GIS Club SU](#club).
 
-- `eyebrow`: 42°41′ N · 23°19′ E — Sofia, Bulgaria
+- `eyebrow`: 42°41′ N · 23°19′ E - Sofia, Bulgaria
 - `button-work`: See the work
 - `button-club`: GIS Club SU
 - `button-tutoring`: GIS tutoring
@@ -67,9 +67,9 @@ Third-year student of Geospatial Systems and Technologies at Sofia University �
 ## Facts {#facts}
 
 - **36** map sheets in the V4+2 atlas, redrawn from open data
-- **1,372** protected trees in my interactive map of Bulgaria’s register
-- **310** Sofia neighbourhoods scored for walking access to services
+- **500** GB of data analysed
 - **15** founding members of GIS Club SU, which I chair
+- **20** students learning QGIS in the GIS Club
 
 # Maps, posters and atlases {#work}
 
